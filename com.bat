@@ -1,0 +1,1 @@
+nmlc --grf JP_Style_Objects_Buildings.grf JP_Style_Objects_Buildings.nml

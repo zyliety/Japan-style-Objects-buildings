@@ -1,0 +1,350 @@
+##grflangid 0x01
+
+#Main grf title and description
+STR_GRF_NAME        :JP Style Objects Buildings V3.71
+STR_GRF_DESCRIPTION :{YELLOW}JP Style Objects ,2025/12/31. {}{YELLOW}Introduce various buildings, inspired by the lovely scenery of Japan.{}{WHITE}Draw by: Zyliety, GarryG, Mrsunman, Lorenzolu. {}Code by:Zyliety.{}License:GPLv2 or higher
+STR_GRF_URL         :https://bananas.openttd.org/package/newgrf/4a50504f
+
+#error messages
+STR_OPENTTD_VERSION :1.2.0 (r22723)
+
+#object classes
+STR_JPPO		:{YELLOW}JP Style objects
+
+STR_ObjectMenu		:    Object Menu
+
+STR_SIHO		:    Single house
+
+STR_FA22		:    Farm
+
+STR_MESH		:    Medium House/Shop
+
+STR_LDEH		:    Low Dence House
+
+STR_PALO		:    Parking Lot
+
+STR_OFFB		:    Office Building
+
+STR_DACH        :    Danchi
+
+STR_PUBB		:    Public Building
+
+STR_SHRI		:    Shrine
+
+STR_STBD		:    Station Building
+
+STR_WARE		:    Warehouse
+
+STR_STAT		:    Status
+
+STR_WAOB		:    Water Objects
+
+#object name and description
+#single house
+STR_single_house_1		:Single house 1   
+STR_single_house_1_purchase_view1		:Yoshizawa House
+STR_single_house_1_purchase_view2		:Nagai House
+STR_single_house_1_purchase_view3		:Miyazaki House
+STR_single_house_1_purchase_view4		:Matsuo House
+
+STR_single_house_2		:Single house 2   
+STR_single_house_2_purchase_view1		:Yoshizawa House
+STR_single_house_2_purchase_view2		:Nagai House
+STR_single_house_2_purchase_view3		:Miyazaki House
+STR_single_house_2_purchase_view4		:Matsuo House
+
+STR_single_house_3		:Single house 3   
+STR_single_house_3_purchase_view1		:Nakasato House
+STR_single_house_3_purchase_view2		:Misaka House
+STR_single_house_3_purchase_view3		:Hidamari Apartment
+STR_single_house_3_purchase_view4		:WIP
+
+STR_single_house_4		:Single house 4   
+STR_single_house_4_purchase_view1		:Nakasato House
+STR_single_house_4_purchase_view2		:Misaka House
+STR_single_house_4_purchase_view3		:Hidamari Apartment
+STR_single_house_4_purchase_view4		:WIP
+
+STR_farm_house_1		:Traditional houses 1  
+STR_farm_house_1_purchase_view1		:Noka
+STR_farm_house_1_purchase_view2		:Machiya
+STR_farm_house_1_purchase_view3		:Kominka
+STR_farm_house_1_purchase_view4		:Noka/Machiya/Kominka
+
+STR_farm_house_2		:Traditional houses 2   
+STR_farm_house_2_purchase_view1		:Noka
+STR_farm_house_2_purchase_view2		:Machiya
+STR_farm_house_2_purchase_view3		:Kominka
+STR_farm_house_2_purchase_view4		:Noka/Machiya/Kominka
+
+#farm2x2
+STR_farm_1		:farm 1
+STR_farm_1_purchase_view1		:farm 2x2 tiles
+STR_farm_1_purchase_view2		:farm 2x2 tiles
+STR_farm_1_purchase_view3		:farm 2x2 tiles
+STR_farm_1_purchase_view4		:farm 2x2 tiles
+
+STR_farm_2		:farm 2
+STR_farm_2_purchase_view1		:farm 2x2 tiles
+STR_farm_2_purchase_view2		:farm 2x2 tiles
+STR_farm_2_purchase_view3		:farm 2x2 tiles
+STR_farm_2_purchase_view4		:farm 2x2 tiles
+
+STR_farm_3		:farm 3
+STR_farm_3_purchase_view1		:farm 2x2 tiles
+STR_farm_3_purchase_view2		:farm 2x2 tiles
+STR_farm_3_purchase_view3		:farm 2x2 tiles
+STR_farm_3_purchase_view4		:farm 2x2 tiles
+
+STR_farm_4		:farm 4
+STR_farm_4_purchase_view1		:farm 2x2 tiles
+STR_farm_4_purchase_view2		:farm 2x2 tiles
+STR_farm_4_purchase_view3		:farm 2x2 tiles
+STR_farm_4_purchase_view4		:farm 2x2 tiles
+
+STR_farm_5		:farm 5
+STR_farm_5_purchase_view1		:farm 2x2 tiles
+STR_farm_5_purchase_view2		:farm 2x2 tiles
+STR_farm_5_purchase_view3		:farm 2x2 tiles
+STR_farm_5_purchase_view4		:farm 2x2 tiles
+
+STR_farm_6		:farm 6
+STR_farm_6_purchase_view1		:farm 2x2 tiles
+STR_farm_6_purchase_view2		:farm 2x2 tiles
+STR_farm_6_purchase_view3		:farm 2x2 tiles
+STR_farm_6_purchase_view4		:farm 2x2 tiles
+
+STR_MESH_1		:Lawson/Saizeriya
+STR_MESH_2		:Low Apartment
+STR_MESH_3		:711
+STR_MESH_4		:Coffee/Ramen Shop
+
+STR_Medium_House_Shop_5		:Sundrug/Hardware store
+STR_Medium_House_Shop_5_purchase_view1		:Sundrug/Hardware store
+STR_Medium_House_Shop_5_purchase_view2		:Sundrug/Hardware store
+STR_Medium_House_Shop_5_purchase_view3		:Sundrug/Hardware store
+STR_Medium_House_Shop_5_purchase_view4		:Sundrug/Hardware store
+
+STR_Medium_House_Shop_6		:OGINO/UNIQLO
+STR_Medium_House_Shop_6_purchase_view1		:OGINO/UNIQLO
+STR_Medium_House_Shop_6_purchase_view2		:OGINO/UNIQLO
+STR_Medium_House_Shop_6_purchase_view3		:OGINO/UNIQLO
+STR_Medium_House_Shop_6_purchase_view4		:OGINO/UNIQLO
+
+STR_Medium_House_Shop_7          :AEON
+STR_Medium_House_Shop_7_purchase_view1    :AEON
+STR_Medium_House_Shop_7_purchase_view2    :AEON
+STR_Medium_House_Shop_7_purchase_view3    :AEON
+STR_Medium_House_Shop_7_purchase_view4    :AEON
+
+STR_Medium_House_Shop_8		:Work clothes store
+STR_Medium_House_Shop_8_purchase_view1		:Work clothes store
+STR_Medium_House_Shop_8_purchase_view2		:Work clothes store
+STR_Medium_House_Shop_8_purchase_view3		:Fit Care DEPOT
+STR_Medium_House_Shop_8_purchase_view4		:Fit Care DEPOT
+
+STR_Medium_House_Shop_9		:Auto repair shop
+STR_Medium_House_Shop_10    :Auto repair shop(Door closed)
+
+STR_Medium_House_Shop_11          :Costco warehouses
+STR_Medium_House_Shop_11_purchase_view1    :Costco warehouses
+STR_Medium_House_Shop_11_purchase_view2    :Costco warehouses
+STR_Medium_House_Shop_11_purchase_view3    :Costco warehouses
+STR_Medium_House_Shop_11_purchase_view4    :Costco warehouses
+
+STR_parking_1		:Parking lot
+STR_parking_1_purchase_view1		:Parking lot
+STR_parking_1_purchase_view2		:Parking lot
+STR_parking_1_purchase_view3		:Parking lot
+STR_parking_1_purchase_view4		:Parking lot
+
+STR_parking_2		:Parking lot
+STR_parking_2_purchase_view1		:Parking lot
+STR_parking_2_purchase_view2		:Parking lot
+STR_parking_2_purchase_view3		:Parking lot
+STR_parking_2_purchase_view4		:Parking lot
+
+STR_parking_3		:Parking lot(2x2)
+STR_parking_3_purchase_view1		:Parking lot(2x2)
+STR_parking_3_purchase_view2		:Parking lot(2x2)
+STR_parking_3_purchase_view3		:Parking lot(2x2)
+STR_parking_3_purchase_view4		:Parking lot(2x2)
+
+STR_parking_4		:Parking lot(1x1)
+
+STR_parking_5		:Parking lot(empty)
+STR_parking_5_purchase_view1		:Parking lot
+STR_parking_5_purchase_view2		:Parking lot
+STR_parking_5_purchase_view3		:Parking lot
+STR_parking_5_purchase_view4		:Parking lot
+
+STR_parking_6		:Parking lot(with decoration)
+STR_parking_6_purchase_view1		:Parking lot
+STR_parking_6_purchase_view2		:Parking lot
+STR_parking_6_purchase_view3		:Parking lot
+STR_parking_6_purchase_view4		:Parking lot
+
+STR_parking_7		:Parking lot(with decoration)
+STR_parking_7_purchase_view1		:Parking lot
+STR_parking_7_purchase_view2		:Parking lot
+STR_parking_7_purchase_view3		:Parking lot
+STR_parking_7_purchase_view4		:Parking lot
+
+STR_parking_8		:Parking lot(corner)
+STR_parking_8_purchase_view1		:Parking lot
+STR_parking_8_purchase_view2		:Parking lot
+STR_parking_8_purchase_view3		:Parking lot
+STR_parking_8_purchase_view4		:Parking lot
+
+STR_parking_9		:Parking lot(decoration)
+STR_parking_9_purchase_view1		:Parking lot
+STR_parking_9_purchase_view2		:Parking lot
+STR_parking_9_purchase_view3		:Parking lot
+STR_parking_9_purchase_view4		:Parking lot
+
+STR_parking_10		:Parking lot
+STR_parking_10_purchase_view1		:Parking lot
+STR_parking_10_purchase_view2		:Parking lot
+STR_parking_10_purchase_view3		:Parking lot
+STR_parking_10_purchase_view4		:Parking lot
+
+STR_parking_11		:Parking lot
+STR_parking_11_purchase_view1		:Parking lot
+STR_parking_11_purchase_view2		:Parking lot
+STR_parking_11_purchase_view3		:Parking lot
+STR_parking_11_purchase_view4		:Parking lot
+
+STR_parking_12		:Parking lot(decoration)
+STR_parking_12_purchase_view1		:Parking lot
+STR_parking_12_purchase_view2		:Parking lot
+STR_parking_12_purchase_view3		:Parking lot
+STR_parking_12_purchase_view4		:Parking lot
+
+STR_parking_13		:Parking lot(decoration)
+STR_parking_13_purchase_view1		:Parking lot
+STR_parking_13_purchase_view2		:Parking lot
+STR_parking_13_purchase_view3		:Parking lot
+STR_parking_13_purchase_view4		:Parking lot
+
+STR_parking_14		:Parking lot
+STR_parking_14_purchase_view1		:Parking lot
+STR_parking_14_purchase_view2		:Parking lot
+STR_parking_14_purchase_view3		:Parking lot
+STR_parking_14_purchase_view4		:Parking lot
+
+STR_parking_15		:Parking lot
+STR_parking_15_purchase_view1		:Parking lot
+STR_parking_15_purchase_view2		:Parking lot
+STR_parking_15_purchase_view3		:Parking lot
+STR_parking_15_purchase_view4		:Parking lot
+
+STR_parking_16		:Parking lot(decoration)
+STR_parking_16_purchase_view1		:Parking lot
+STR_parking_16_purchase_view2		:Parking lot
+STR_parking_16_purchase_view3		:Parking lot
+STR_parking_16_purchase_view4		:Parking lot
+
+STR_parking_17		:Parking lot(decoration)
+STR_parking_17_purchase_view1		:Parking lot
+STR_parking_17_purchase_view2		:Parking lot
+STR_parking_17_purchase_view3		:Parking lot
+STR_parking_17_purchase_view4		:Parking lot
+
+STR_OFFB_1      :Office Building 1
+STR_OFFB_2      :Office Building 2
+STR_OFFB_3      :Office Building 3
+STR_OFFB_4      :Office Building 4
+
+
+STR_DACH_1      :Danchi
+STR_DACH_2      :Danchi
+STR_DACH_3      :Apartment
+STR_DACH_4      :Apartment
+STR_DACH_5      :Apartment
+STR_DACH_6      :Apartment
+STR_DACH_7      :Apartment
+STR_DACH_8      :Apartment
+STR_DACH_9      :Danchi
+STR_DACH_10      :Danchi
+STR_DACH_11      :Danchi
+
+
+STR_PUBB_1      :Post Office
+STR_PUBB_2      :Post Office(L)/Fire Station
+STR_PUBB_3      :Petrol Station
+STR_PUBB_4      :Fire Station(1x2)
+
+STR_PUBB_5      :NHK/Petrol Station(2x2)
+STR_public_building_5_purchase_view1		:NHK/Petrol Station(2x2)
+STR_public_building_5_purchase_view2		:NHK/Petrol Station(2x2)
+STR_public_building_5_purchase_view3		:NHK/Petrol Station(2x2)
+STR_public_building_5_purchase_view4		:NHK/Petrol Station(2x2)
+
+STR_PUBB_6      :Sapporo TV Tower
+STR_public_building_6_purchase_view1		:Sapporo TV Tower
+STR_public_building_6_purchase_view2		:Sapporo TV Tower
+STR_public_building_6_purchase_view3		:Sapporo TV Tower
+STR_public_building_6_purchase_view4		:Sapporo TV Tower
+
+STR_PUBB_7      :School
+STR_public_building_7_purchase_view1		:School in countryside
+STR_public_building_7_purchase_view2		:School in countryside
+
+STR_public_building_8          :Former Uwaoka Elementary School(1876)
+STR_public_building_8_purchase_view1    :Former Uwaoka Elementary School(1876)
+STR_public_building_8_purchase_view2    :Former Uwaoka Elementary School(1876)
+STR_public_building_8_purchase_view3    :Former Uwaoka Elementary School(1876)
+STR_public_building_8_purchase_view4    :Former Uwaoka Elementary School(1876)
+
+STR_public_building_9            :Senior high school(modern style)
+STR_public_building_9_purchase_view1    :Senior high school(modern style)
+STR_public_building_9_purchase_view2    :Senior high school(modern style)
+STR_public_building_9_purchase_view3    :Senior high school(modern style)
+STR_public_building_9_purchase_view4    :Senior high school(modern style)
+
+STR_public_building_10            :Senior high school(modern style)
+STR_public_building_10_purchase_view1    :Senior high school(modern style)
+STR_public_building_10_purchase_view2    :Senior high school(modern style)
+STR_public_building_10_purchase_view3    :Senior high school(modern style)
+STR_public_building_10_purchase_view4    :Senior high school(modern style)
+
+STR_SHRI_1     :Shrine 1
+STR_SHRI_2     :Shrine 2
+STR_SHRI_3     :Shrine 3
+
+STR_SHRI_4      :Shrine2x3
+STR_shrine_4_purchase_view1		:Shrine2x3
+STR_shrine_4_purchase_view2		:Shrine2x3
+
+STR_shrine_5		:Temple 2x2
+STR_shrine_5_purchase_view1		:Temple 2x2
+STR_shrine_5_purchase_view2		:Temple 2x2
+STR_shrine_5_purchase_view3		:Temple 2x2
+STR_shrine_5_purchase_view4		:Temple 2x2
+
+STR_STBD_1     :Shimonada Station
+STR_STBD_2     :Shimonada Station
+STR_STBD_3     :Kowada Station
+STR_STBD_4     :Kushiro Station
+STR_STBD_5     :Hino Station
+STR_STBD_6     :Arihata Station
+STR_STBD_7     :Kodama Station
+STR_STBD_8     :Meiji period Station
+
+STR_WARE_1     :Warehouse 1
+STR_WARE_2     :Warehouse in countryside (1x2)
+STR_WARE_3     :Warehouse 2
+
+STR_WARE_4     :warehouse overlap
+STR_warehouse_4_purchase_view1        :warehouse overlap
+STR_warehouse_4_purchase_view2        :warehouse overlap
+STR_warehouse_4_purchase_view3        :warehouse overlap
+STR_warehouse_4_purchase_view4        :warehouse overlap
+
+STR_STAT_1     :{YELLOW}Landmark of The Northernmost Point in Japan
+
+STR_water_objects_1		:port warehouse
+STR_water_objects_1_purchase_view1		:port warehouse
+STR_water_objects_1_purchase_view2		:port warehouse
+STR_water_objects_1_purchase_view3		:port warehouse
+STR_water_objects_1_purchase_view4		:port warehouse
