@@ -1,8 +1,8 @@
 ##grflangid 0x01
 
 #Main grf title and description
-STR_GRF_NAME        :JP Style Objects Buildings V3.72
-STR_GRF_DESCRIPTION :{YELLOW}JP Style Objects ,2025/12/31. {}{YELLOW}Introduce various buildings, inspired by the lovely scenery of Japan.{}{WHITE}Draw by: Zyliety, GarryG, Mrsunman, Lorenzolu. {}Code by:Zyliety.{}License:GPLv2 or higher
+STR_GRF_NAME        :JP Style Objects Buildings V3.80
+STR_GRF_DESCRIPTION :{YELLOW}JP Style Objects ,2025/3/12. {}{YELLOW}Introduce various buildings, inspired by the lovely scenery of Japan.{}{WHITE}Draw by: Zyliety, GarryG, Mrsunman, Lorenzolu. {}Code by:Zyliety.{}License:GPLv2 or higher
 STR_GRF_URL         :https://github.com/zyliety/Japan-style-Objects-buildings
 
 #error messages
@@ -268,6 +268,8 @@ STR_DACH_8      :Apartment
 STR_DACH_9      :Danchi
 STR_DACH_10      :Danchi
 STR_DACH_11      :Danchi
+STR_DACH_12      :Danchi
+STR_DACH_13      :Danchi
 
 
 STR_PUBB_1      :Post Office
