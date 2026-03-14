@@ -1,7 +1,7 @@
 ##grflangid 0x01
 
 #Main grf title and description
-STR_GRF_NAME        :JP Style Objects Buildings V3.80
+STR_GRF_NAME        :JP Style Objects Buildings V3.81
 STR_GRF_DESCRIPTION :{YELLOW}JP Style Objects ,2025/3/12. {}{YELLOW}Introduce various buildings, inspired by the lovely scenery of Japan.{}{WHITE}Draw by: Zyliety, GarryG, Mrsunman, Lorenzolu. {}Code by:Zyliety.{}License:GPLv2 or higher
 STR_GRF_URL         :https://github.com/zyliety/Japan-style-Objects-buildings
 
@@ -324,6 +324,21 @@ STR_shrine_5_purchase_view1		:Temple 2x2
 STR_shrine_5_purchase_view2		:Temple 2x2
 STR_shrine_5_purchase_view3		:Temple 2x2
 STR_shrine_5_purchase_view4		:Temple 2x2
+
+STR_SHRI_6      :Shrine2x3
+STR_shrine_6_purchase_view1		:Shrine2x3
+STR_shrine_6_purchase_view2		:Shrine2x3
+
+STR_SHRI_7     :Tomb
+
+STR_shrine_8           :Torii
+STR_shrine_8_purchase_view1    :Torii
+STR_shrine_8_purchase_view2    :Torii
+STR_shrine_8_purchase_view3    :Torii
+STR_shrine_8_purchase_view4    :Torii
+
+
+
 
 STR_STBD_1     :Shimonada Station
 STR_STBD_2     :Shimonada Station

@@ -10,7 +10,7 @@ grf {
     grfid:                  "JPPO";
     name:                   string(STR_GRF_NAME);
     desc:                   string(STR_GRF_DESCRIPTION);
-    version:                380;
+    version:                381;
     min_compatible_version: 1;
 }
 template template_flat_low_building(x,y,filename) {
@@ -39630,6 +39630,1299 @@ item (FEAT_OBJECTS, shrine_5, 804) {
         purchase: switch_shrine_5_purchase;
         additional_text: switch_add_text_shrine_5;
       }
+}
+////sh6 
+//spritesets with 4 directions, SNOW-version and the PURCHASE-menu
+spriteset (spriteset_shrine_6_t1) {
+     template_2x3_2views_t1(0,0,"gfx/test2x3_8.png")
+}
+
+alternative_sprites (spriteset_shrine_6_t1, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    template_2x3_2views_t1(0,0,"gfx/shrine_6.png")
+}
+
+spriteset (spriteset_shrine_6_t2) {
+     template_2x3_2views_t2(0,0,"gfx/test2x3_8.png")
+}
+
+alternative_sprites (spriteset_shrine_6_t2, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    template_2x3_2views_t2(0,0,"gfx/shrine_6.png")
+}
+
+spriteset (spriteset_shrine_6_t3) {
+     template_2x3_2views_t3(0,0,"gfx/test2x3_8.png")
+}
+
+alternative_sprites (spriteset_shrine_6_t3, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    template_2x3_2views_t3(0,0,"gfx/shrine_6.png")
+}
+
+spriteset (spriteset_shrine_6_t4) {
+     template_2x3_2views_t4(0,0,"gfx/test2x3_8.png")
+}
+
+alternative_sprites (spriteset_shrine_6_t4, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    template_2x3_2views_t4(0,0,"gfx/shrine_6.png")
+}
+
+spriteset (spriteset_shrine_6_t5) {
+     template_2x3_2views_t5(0,0,"gfx/test2x3_8.png")
+}
+
+alternative_sprites (spriteset_shrine_6_t5, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    template_2x3_2views_t5(0,0,"gfx/shrine_6.png")
+}
+
+spriteset (spriteset_shrine_6_t6) {
+     template_2x3_2views_t6(0,0,"gfx/test2x3_8.png")
+}
+
+alternative_sprites (spriteset_shrine_6_t6, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    template_2x3_2views_t6(0,0,"gfx/shrine_6.png")
+}
+
+/****  SNOW  ****/
+
+spriteset (spriteset_shrine_6_t1_SNOW) {
+     template_2x3_2views_t1(0,0,"gfx/test2x3_8.png")
+}
+
+alternative_sprites (spriteset_shrine_6_t1_SNOW, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    template_2x3_2views_t1(0,0,"gfx/shrine_6_snow.png")
+}
+
+spriteset (spriteset_shrine_6_t2_SNOW) {
+     template_2x3_2views_t2(0,0,"gfx/test2x3_8.png")
+}
+
+alternative_sprites (spriteset_shrine_6_t2_SNOW, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    template_2x3_2views_t2(0,0,"gfx/shrine_6_snow.png")
+}
+
+spriteset (spriteset_shrine_6_t3_SNOW) {
+     template_2x3_2views_t3(0,0,"gfx/test2x3_8.png")
+}
+
+alternative_sprites (spriteset_shrine_6_t3_SNOW, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    template_2x3_2views_t3(0,0,"gfx/shrine_6_snow.png")
+}
+
+spriteset (spriteset_shrine_6_t4_SNOW) {
+     template_2x3_2views_t4(0,0,"gfx/test2x3_8.png")
+}
+
+alternative_sprites (spriteset_shrine_6_t4_SNOW, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    template_2x3_2views_t4(0,0,"gfx/shrine_6_snow.png")
+}
+
+spriteset (spriteset_shrine_6_t5_SNOW) {
+     template_2x3_2views_t5(0,0,"gfx/test2x3_8.png")
+}
+
+alternative_sprites (spriteset_shrine_6_t5_SNOW, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    template_2x3_2views_t5(0,0,"gfx/shrine_6_snow.png")
+}
+
+spriteset (spriteset_shrine_6_t6_SNOW) {
+     template_2x3_2views_t6(0,0,"gfx/test2x3_8.png")
+}
+
+alternative_sprites (spriteset_shrine_6_t6_SNOW, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    template_2x3_2views_t6(0,0,"gfx/shrine_6_snow.png")
+}
+
+/****  purchase  ****/
+
+spriteset (spriteset_shrine_6_PURCHASE) {
+     template_2x3_2views_purchase(0,0,"gfx/test2x3_8.png")
+}
+
+alternative_sprites (spriteset_shrine_6_PURCHASE, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    template_2x3_2views_purchase(0,0,"gfx/shrine_6.png")
+}
+
+//View_1
+spritelayout spritelayout_shrine_6_t1_view1 {
+    ground {
+      // normal ground sprite - always draw
+      sprite: LOAD_TEMP(0) + LOAD_TEMP(1);
+   }
+    
+    building {
+        sprite: spriteset_shrine_6_t1(0);
+        hide_sprite: nearby_tile_height(0, 0) >= snowline_height;
+        xoffset: 0; //from NE edge
+        yoffset: 0; //from NW edge
+        zoffset: 0;
+        xextent: 16;
+        yextent: 16;
+        zextent: 20;
+    }
+
+
+
+building {
+        sprite: spriteset_shrine_6_t1_SNOW(0);
+        hide_sprite: nearby_tile_height(0, 0) < snowline_height;
+        xoffset: 0; //from NE edge
+        yoffset: 0; //from NW edge
+        zoffset: 0;
+        xextent: 16;
+        yextent: 16;
+        zextent: 20;
+    }
+
+}
+
+spritelayout spritelayout_shrine_6_t2_view1 {
+    ground {
+      // normal ground sprite - always draw
+      sprite: LOAD_TEMP(0) + LOAD_TEMP(1);
+   }
+    
+    building {
+        sprite: spriteset_shrine_6_t2(0);
+        hide_sprite: nearby_tile_height(0, 0) >= snowline_height;
+        xoffset: 0; //from NE edge
+        yoffset: 0; //from NW edge
+        zoffset: 0;
+        xextent: 16;
+        yextent: 16;
+        zextent: 20;
+    }
+
+
+
+building {
+        sprite: spriteset_shrine_6_t2_SNOW(0);
+        hide_sprite: nearby_tile_height(0, 0) < snowline_height;
+        xoffset: 0; //from NE edge
+        yoffset: 0; //from NW edge
+        zoffset: 0;
+        xextent: 16;
+        yextent: 16;
+        zextent: 20;
+    }
+
+}
+
+spritelayout spritelayout_shrine_6_t3_view1 {
+    ground {
+      // normal ground sprite - always draw
+      sprite: LOAD_TEMP(0) + LOAD_TEMP(1);
+   }
+    
+    building {
+        sprite: spriteset_shrine_6_t3(0);
+        hide_sprite: nearby_tile_height(0, 0) >= snowline_height;
+        xoffset: 0; //from NE edge
+        yoffset: 0; //from NW edge
+        zoffset: 0;
+        xextent: 16;
+        yextent: 16;
+        zextent: 20;
+    }
+
+
+
+building {
+        sprite: spriteset_shrine_6_t3_SNOW(0);
+        hide_sprite: nearby_tile_height(0, 0) < snowline_height;
+        xoffset: 0; //from NE edge
+        yoffset: 0; //from NW edge
+        zoffset: 0;
+        xextent: 16;
+        yextent: 16;
+        zextent: 20;
+    }
+
+}
+
+spritelayout spritelayout_shrine_6_t4_view1 {
+    ground {
+      // normal ground sprite - always draw
+      sprite: LOAD_TEMP(0) + LOAD_TEMP(1);
+   }
+    
+    building {
+        sprite: spriteset_shrine_6_t4(0);
+        hide_sprite: nearby_tile_height(0, 0) >= snowline_height;
+        xoffset: 0; //from NE edge
+        yoffset: 0; //from NW edge
+        zoffset: 0;
+        xextent: 16;
+        yextent: 16;
+        zextent: 20;
+    }
+
+	building {
+        sprite: spriteset_shrine_6_t4_SNOW(0);
+        hide_sprite: nearby_tile_height(0, 0) < snowline_height;
+        xoffset: 0; //from NE edge
+        yoffset: 0; //from NW edge
+        zoffset: 0;
+        xextent: 16;
+        yextent: 16;
+        zextent: 20;
+    }
+
+}
+	
+spritelayout spritelayout_shrine_6_t5_view1 {
+    ground {
+      // normal ground sprite - always draw
+      sprite: LOAD_TEMP(0) + LOAD_TEMP(1);
+   }
+    
+    building {
+        sprite: spriteset_shrine_6_t5(0);
+        hide_sprite: nearby_tile_height(0, 0) >= snowline_height;
+        xoffset: 0; //from NE edge
+        yoffset: 0; //from NW edge
+        zoffset: 0;
+        xextent: 16;
+        yextent: 16;
+        zextent: 20;
+    }	
+
+building {
+        sprite: spriteset_shrine_6_t5_SNOW(0);
+        hide_sprite: nearby_tile_height(0, 0) < snowline_height;
+        xoffset: 0; //from NE edge
+        yoffset: 0; //from NW edge
+        zoffset: 0;
+        xextent: 16;
+        yextent: 16;
+        zextent: 20;
+    }
+
+}
+	
+spritelayout spritelayout_shrine_6_t6_view1 {
+    ground {
+      // normal ground sprite - always draw
+      sprite: LOAD_TEMP(0) + LOAD_TEMP(1);
+   }
+    
+    building {
+        sprite: spriteset_shrine_6_t6(0);
+        hide_sprite: nearby_tile_height(0, 0) >= snowline_height;
+        xoffset: 0; //from NE edge
+        yoffset: 0; //from NW edge
+        zoffset: 0;
+        xextent: 16;
+        yextent: 16;
+        zextent: 20;
+    }
+
+	building {
+        sprite: spriteset_shrine_6_t6_SNOW(0);
+        hide_sprite: nearby_tile_height(0, 0) < snowline_height;
+        xoffset: 0; //from NE edge
+        yoffset: 0; //from NW edge
+        zoffset: 0;
+        xextent: 16;
+        yextent: 16;
+        zextent: 20;
+    }
+
+}
+
+
+spritelayout spritelayout_shrine_6_view1_purchase {
+	ground {
+        sprite: GROUNDSPRITE_NORMAL;
+	}
+	building {
+		sprite: spriteset_shrine_6_PURCHASE(0);
+		xoffset: 0; //from NE edge
+                yoffset: 16; //from NW edge
+                zoffset: 0;
+                xextent: 16;
+                yextent: 16;
+                zextent: 20;
+	}
+}
+
+//View_2
+spritelayout spritelayout_shrine_6_t1_view2 {
+    ground {
+      // normal ground sprite - always draw
+      sprite: LOAD_TEMP(0) + LOAD_TEMP(1);
+   }
+    
+    building {
+        sprite: spriteset_shrine_6_t1(1);
+        hide_sprite: nearby_tile_height(0, 0) >= snowline_height;
+        xoffset: 0; //from NE edge
+        yoffset: 0; //from NW edge
+        zoffset: 0;
+        xextent: 16;
+        yextent: 16;
+        zextent: 20;
+    }
+
+
+
+building {
+        sprite: spriteset_shrine_6_t1_SNOW(1);
+        hide_sprite: nearby_tile_height(0, 0) < snowline_height;
+        xoffset: 0; //from NE edge
+        yoffset: 0; //from NW edge
+        zoffset: 0;
+        xextent: 16;
+        yextent: 16;
+        zextent: 20;
+    }
+
+}
+
+spritelayout spritelayout_shrine_6_t2_view2 {
+    ground {
+      // normal ground sprite - always draw
+      sprite: LOAD_TEMP(0) + LOAD_TEMP(1);
+   }
+    
+    building {
+        sprite: spriteset_shrine_6_t2(1);
+        hide_sprite: nearby_tile_height(0, 0) >= snowline_height;
+        xoffset: 0; //from NE edge
+        yoffset: 0; //from NW edge
+        zoffset: 0;
+        xextent: 16;
+        yextent: 16;
+        zextent: 20;
+    }
+
+
+
+building {
+        sprite: spriteset_shrine_6_t2_SNOW(1);
+        hide_sprite: nearby_tile_height(0, 0) < snowline_height;
+        xoffset: 0; //from NE edge
+        yoffset: 0; //from NW edge
+        zoffset: 0;
+        xextent: 16;
+        yextent: 16;
+        zextent: 20;
+    }
+
+}
+
+spritelayout spritelayout_shrine_6_t3_view2 {
+    ground {
+      // normal ground sprite - always draw
+      sprite: LOAD_TEMP(0) + LOAD_TEMP(1);
+   }
+    
+    building {
+        sprite: spriteset_shrine_6_t3(1);
+        hide_sprite: nearby_tile_height(0, 0) >= snowline_height;
+        xoffset: 0; //from NE edge
+        yoffset: 0; //from NW edge
+        zoffset: 0;
+        xextent: 16;
+        yextent: 16;
+        zextent: 20;
+    }
+
+
+
+building {
+        sprite: spriteset_shrine_6_t3_SNOW(1);
+        hide_sprite: nearby_tile_height(0, 0) < snowline_height;
+        xoffset: 0; //from NE edge
+        yoffset: 0; //from NW edge
+        zoffset: 0;
+        xextent: 16;
+        yextent: 16;
+        zextent: 20;
+    }
+
+}
+
+spritelayout spritelayout_shrine_6_t4_view2 {
+    ground {
+      // normal ground sprite - always draw
+      sprite: LOAD_TEMP(0) + LOAD_TEMP(1);
+   }
+    
+    building {
+        sprite: spriteset_shrine_6_t4(1);
+        hide_sprite: nearby_tile_height(0, 0) >= snowline_height;
+        xoffset: 0; //from NE edge
+        yoffset: 0; //from NW edge
+        zoffset: 0;
+        xextent: 16;
+        yextent: 16;
+        zextent: 20;
+    }
+
+	building {
+        sprite: spriteset_shrine_6_t4_SNOW(1);
+        hide_sprite: nearby_tile_height(0, 0) < snowline_height;
+        xoffset: 0; //from NE edge
+        yoffset: 0; //from NW edge
+        zoffset: 0;
+        xextent: 16;
+        yextent: 16;
+        zextent: 20;
+    }
+
+}
+	
+spritelayout spritelayout_shrine_6_t5_view2 {
+    ground {
+      // normal ground sprite - always draw
+      sprite: LOAD_TEMP(0) + LOAD_TEMP(1);
+   }
+    
+    building {
+        sprite: spriteset_shrine_6_t5(1);
+        hide_sprite: nearby_tile_height(0, 0) >= snowline_height;
+        xoffset: 0; //from NE edge
+        yoffset: 0; //from NW edge
+        zoffset: 0;
+        xextent: 16;
+        yextent: 16;
+        zextent: 20;
+    }	
+
+building {
+        sprite: spriteset_shrine_6_t5_SNOW(1);
+        hide_sprite: nearby_tile_height(0, 0) < snowline_height;
+        xoffset: 0; //from NE edge
+        yoffset: 0; //from NW edge
+        zoffset: 0;
+        xextent: 16;
+        yextent: 16;
+        zextent: 20;
+    }
+
+}
+	
+spritelayout spritelayout_shrine_6_t6_view2 {
+    ground {
+      // normal ground sprite - always draw
+      sprite: LOAD_TEMP(0) + LOAD_TEMP(1);
+   }
+    
+    building {
+        sprite: spriteset_shrine_6_t6(1);
+        hide_sprite: nearby_tile_height(0, 0) >= snowline_height;
+        xoffset: 0; //from NE edge
+        yoffset: 0; //from NW edge
+        zoffset: 0;
+        xextent: 16;
+        yextent: 16;
+        zextent: 20;
+    }
+
+	building {
+        sprite: spriteset_shrine_6_t6_SNOW(1);
+        hide_sprite: nearby_tile_height(0, 0) < snowline_height;
+        xoffset: 0; //from NE edge
+        yoffset: 0; //from NW edge
+        zoffset: 0;
+        xextent: 16;
+        yextent: 16;
+        zextent: 20;
+    }
+
+}
+
+
+spritelayout spritelayout_shrine_6_view2_purchase {
+	ground {
+        sprite: GROUNDSPRITE_NORMAL;
+	}
+	building {
+		sprite: spriteset_shrine_6_PURCHASE(1);
+		xoffset: 0; //from NE edge
+                yoffset: 16; //from NW edge
+                zoffset: 0;
+                xextent: 16;
+                yextent: 16;
+                zextent: 20;
+	}
+}
+
+
+//select correct sprites for position of the tiles for the one view
+switch (FEAT_OBJECTS, SELF, switch_shrine_6_position_view1, relative_pos) {
+	relative_coord(0, 0): spritelayout_shrine_6_t1_view1;
+	relative_coord(0, 1): spritelayout_shrine_6_t2_view1;
+	relative_coord(1, 0): spritelayout_shrine_6_t3_view1;
+	relative_coord(1, 1): spritelayout_shrine_6_t4_view1;
+        relative_coord(2, 0): spritelayout_shrine_6_t5_view1;
+	relative_coord(2, 1): spritelayout_shrine_6_t6_view1;
+	spritelayout_shrine_6_t1_view1;
+    }
+
+switch (FEAT_OBJECTS, SELF, switch_shrine_6_position_view2, relative_pos) {
+	relative_coord(0, 0): spritelayout_shrine_6_t1_view2;
+	relative_coord(0, 1): spritelayout_shrine_6_t2_view2;
+	relative_coord(0, 2): spritelayout_shrine_6_t3_view2;
+	relative_coord(1, 0): spritelayout_shrine_6_t4_view2;
+        relative_coord(1, 1): spritelayout_shrine_6_t5_view2;
+	relative_coord(1, 2): spritelayout_shrine_6_t6_view2;
+	spritelayout_shrine_6_t1_view2;
+    }
+
+
+//decide spritelayout for each of the 1 direction
+switch (FEAT_OBJECTS, SELF, switch_shrine_6_view, view) {
+    1:  switch_shrine_6_position_view2;
+    switch_shrine_6_position_view1;
+}
+
+//calculate ground sprite for object
+switch (FEAT_OBJECTS, SELF, switch_shrine_6_object, [
+    STORE_TEMP(GROUNDSPRITE_NORMAL, 1),
+    STORE_TEMP( (nearby_tile_terrain_type(0,0) == TILETYPE_DESERT) * GROUNDSPRITE_DESERT, 1),
+    STORE_TEMP( LOAD_TEMP(1) + (LOAD_TEMP(1) == 0) * 4512 * (nearby_tile_terrain_type( 1, 0) == TILETYPE_DESERT), 1),
+    STORE_TEMP( LOAD_TEMP(1) + (LOAD_TEMP(1) == 0) * 4512 * (nearby_tile_terrain_type(-1, 0) == TILETYPE_DESERT), 1),
+    STORE_TEMP( LOAD_TEMP(1) + (LOAD_TEMP(1) == 0) * 4512 * (nearby_tile_terrain_type( 0, 1) == TILETYPE_DESERT), 1),
+    STORE_TEMP( LOAD_TEMP(1) + (LOAD_TEMP(1) == 0) * 4512 * (nearby_tile_terrain_type( 0,-1) == TILETYPE_DESERT), 1),
+    STORE_TEMP( LOAD_TEMP(1) + (LOAD_TEMP(1) == 0) * GROUNDSPRITE_NORMAL, 1),
+    STORE_TEMP(terrain_type == TILETYPE_SNOW   ? GROUNDSPRITE_SNOW : LOAD_TEMP(1), 1),
+    STORE_TEMP(snowline_height == 0xFF ? 0xFF : nearby_tile_height(0,0) - snowline_height, 127),
+    STORE_TEMP((LOAD_TEMP(127) == -1) ? GROUNDSPRITE_SNOW_1_4 : LOAD_TEMP(1), 1),
+    STORE_TEMP((LOAD_TEMP(127) ==  0) ? GROUNDSPRITE_SNOW_2_4 : LOAD_TEMP(1), 1),
+    STORE_TEMP((LOAD_TEMP(127) ==  1) ? GROUNDSPRITE_SNOW_3_4 : LOAD_TEMP(1), 1)
+        ]) {
+    switch_shrine_6_view;
+}
+
+//calculate ground sprite for purchase menu
+switch (FEAT_OBJECTS, SELF, switch_shrine_6_purchase, view) {
+    1:  spritelayout_shrine_6_view2_purchase;
+    spritelayout_shrine_6_view1_purchase;
+}
+
+switch (FEAT_OBJECTS, SELF, switch_add_text_shrine_6, view) {
+   1: string(STR_shrine_6_purchase_view2);
+   default: string(STR_shrine_6_purchase_view1);
+}
+
+item (FEAT_OBJECTS, shrine_6, 805) {
+    property {
+        class: "SHRI";
+        classname: string(STR_SHRI);
+        name: string(STR_SHRI_6);
+        climates_available: ALL_CLIMATES;
+        size: [3,2];
+        build_cost_multiplier: 0;
+        remove_cost_multiplier: 0;
+        introduction_date: date(1111,1,1);
+        end_of_life_date: 0xFFFFFFFF;
+        object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE, OBJ_FLAG_ANYTHING_REMOVE, OBJ_FLAG_REMOVE_IS_INCOME);
+        height: 0;
+        num_views: 2;
+     }
+    graphics {
+        default: switch_shrine_6_object;
+        purchase: switch_shrine_6_purchase;
+        additional_text: switch_add_text_shrine_6;
+      }
+}
+/////shrine 7
+//start shrine 3
+spriteset (spriteset_shrine_7) {
+    template_tallflat_m(0,0,"gfx/tallflat_8.png")
+}
+alternative_sprites (spriteset_shrine_7, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    template_tallflat_m(0,0,"gfx/shrine_7.png")
+}
+
+spriteset (spriteset_shrine_7_SNOW) {
+    template_tallflat_m(0,0,"gfx/tallflat_8_SNOW.png")
+}
+alternative_sprites (spriteset_shrine_7_SNOW, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    template_tallflat_m(0,0,"gfx/shrine_7_snow.png")
+}
+
+spriteset (spriteset_shrine_7_PURCHASE) {
+    template_tallflat_m(0,0,"gfx/tallflat_8.png")
+}
+alternative_sprites (spriteset_shrine_7_PURCHASE, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    template_tallflat_m(0,0,"gfx/shrine_7.png")
+}
+
+/* spritelayouts */
+
+//Direction_1
+spritelayout spritelayout_shrine_7_1 {
+    ground {
+      // normal ground sprite - always draw
+      sprite: LOAD_TEMP(0) + LOAD_TEMP(1);
+   }
+    
+    building {
+        sprite: spriteset_shrine_7(0);
+        hide_sprite: nearby_tile_height(0, 0) >= snowline_height;
+        xoffset: 0; //from NE edge
+        yoffset: 0; //from NW edge
+        zoffset: 0;
+        xextent: 16;
+        yextent: 16;
+        zextent: 16;
+    }
+
+building {
+        sprite: spriteset_shrine_7_SNOW(0);
+        hide_sprite: nearby_tile_height(0, 0) < snowline_height;
+        xoffset: 0; //from NE edge
+        yoffset: 0; //from NW edge
+        zoffset: 0;
+        xextent: 16;
+        yextent: 16;
+        zextent: 16;
+    }
+
+}
+
+spritelayout spritelayout_shrine_7_1_purchase {
+   ground {
+        sprite: GROUNDSPRITE_NORMAL;
+   }
+   building {
+      sprite: spriteset_shrine_7_PURCHASE(0);
+      xoffset: 0; //from NE edge
+                yoffset: 0; //from NW edge
+                zoffset: 0;
+                xextent: 16;
+                yextent: 16;
+                zextent: 16;
+   }
+}
+
+
+
+//Direction_2
+spritelayout spritelayout_shrine_7_2 {
+    ground {
+      // normal ground sprite - always draw
+      sprite: LOAD_TEMP(0) + LOAD_TEMP(1);
+   }
+    
+    building {
+        sprite: spriteset_shrine_7(1);
+        hide_sprite: nearby_tile_height(0, 0) >= snowline_height;
+        xoffset: 0; //from NE edge
+        yoffset: 0; //from NW edge
+        zoffset: 0;
+        xextent: 16;
+        yextent: 16;
+        zextent: 16;
+    }
+
+building {
+        sprite: spriteset_shrine_7_SNOW(1);
+        hide_sprite: nearby_tile_height(0, 0) < snowline_height;
+        xoffset: 0; //from NE edge
+        yoffset: 0; //from NW edge
+        zoffset: 0;
+        xextent: 16;
+        yextent: 16;
+        zextent: 16;
+    }
+
+}
+
+spritelayout spritelayout_shrine_7_2_purchase {
+   ground {
+        sprite: GROUNDSPRITE_NORMAL;
+   }
+   building {
+      sprite: spriteset_shrine_7_PURCHASE(1);
+      xoffset: 0; //from NE edge
+                yoffset: 0; //from NW edge
+                zoffset: 0;
+                xextent: 16;
+                yextent: 16;
+                zextent: 16;
+   }
+}
+
+//Direction_3
+spritelayout spritelayout_shrine_7_3 {
+    ground {
+      // normal ground sprite - always draw
+      sprite: LOAD_TEMP(0) + LOAD_TEMP(1);
+   }
+    
+    building {
+        sprite: spriteset_shrine_7(2);
+        hide_sprite: nearby_tile_height(0, 0) >= snowline_height;
+        xoffset: 0; //from NE edge
+        yoffset: 0; //from NW edge
+        zoffset: 0;
+        xextent: 16;
+        yextent: 16;
+        zextent: 16;
+    }
+
+building {
+        sprite: spriteset_shrine_7_SNOW(2);
+        hide_sprite: nearby_tile_height(0, 0) < snowline_height;
+        xoffset: 0; //from NE edge
+        yoffset: 0; //from NW edge
+        zoffset: 0;
+        xextent: 16;
+        yextent: 16;
+        zextent: 16;
+    }
+
+}
+
+spritelayout spritelayout_shrine_7_3_purchase {
+   ground {
+        sprite: GROUNDSPRITE_NORMAL;
+   }
+   building {
+      sprite: spriteset_shrine_7_PURCHASE(2);
+      xoffset: 0; //from NE edge
+                yoffset: 0; //from NW edge
+                zoffset: 0;
+                xextent: 16;
+                yextent: 16;
+                zextent: 16;
+   }
+}
+
+
+//Direction_4
+spritelayout spritelayout_shrine_7_4 {
+    ground {
+      // normal ground sprite - always draw
+      sprite: LOAD_TEMP(0) + LOAD_TEMP(1);
+   }
+    
+    building {
+        sprite: spriteset_shrine_7(3);
+        hide_sprite: nearby_tile_height(0, 0) >= snowline_height;
+        xoffset: 0; //from NE edge
+        yoffset: 0; //from NW edge
+        zoffset: 0;
+        xextent: 16;
+        yextent: 16;
+        zextent: 16;
+    }
+
+building {
+        sprite: spriteset_shrine_7_SNOW(3);
+        hide_sprite: nearby_tile_height(0, 0) < snowline_height;
+        xoffset: 0; //from NE edge
+        yoffset: 0; //from NW edge
+        zoffset: 0;
+        xextent: 16;
+        yextent: 16;
+        zextent: 16;
+    }
+
+}
+
+spritelayout spritelayout_shrine_7_4_purchase {
+   ground {
+        sprite: GROUNDSPRITE_NORMAL;
+   }
+   building {
+      sprite: spriteset_shrine_7_PURCHASE(3);
+      xoffset: 0; //from NE edge
+                yoffset: 0; //from NW edge
+                zoffset: 0;
+                xextent: 16;
+                yextent: 16;
+                zextent: 16;
+   }
+}
+
+//decide spritelayout for each of the 4 directions
+switch (FEAT_OBJECTS, SELF, switch_shrine_7_view, view) {
+    1:  spritelayout_shrine_7_2;
+    2:  spritelayout_shrine_7_3;
+    3:  spritelayout_shrine_7_4;
+    spritelayout_shrine_7_1;
+}
+
+//calculate ground sprite for object
+switch (FEAT_OBJECTS, SELF, switch_shrine_7_object, [
+//  STORE_TEMP(slope_to_sprite_offset(tile_slope), 0),
+    STORE_TEMP(0, 0),
+    STORE_TEMP(GROUNDSPRITE_NORMAL, 1),
+    STORE_TEMP(terrain_type == TILETYPE_DESERT ? GROUNDSPRITE_DESERT : LOAD_TEMP(1), 1),
+    STORE_TEMP(terrain_type == TILETYPE_SNOW   ? GROUNDSPRITE_SNOW : LOAD_TEMP(1), 1),
+    STORE_TEMP(snowline_height == 0xFF ? 0xFF : nearby_tile_height(0,0) - snowline_height, 127),
+    STORE_TEMP((LOAD_TEMP(127) == -1) ? GROUNDSPRITE_SNOW_1_4 : LOAD_TEMP(1), 1),
+    STORE_TEMP((LOAD_TEMP(127) ==  0) ? GROUNDSPRITE_SNOW_2_4 : LOAD_TEMP(1), 1),
+    STORE_TEMP((LOAD_TEMP(127) ==  1) ? GROUNDSPRITE_SNOW_3_4 : LOAD_TEMP(1), 1)
+        ]) {
+    switch_shrine_7_view;
+}
+
+//calculate ground sprite for purchase menu
+switch (FEAT_OBJECTS, SELF, switch_shrine_7_purchase, view) {
+    1:  spritelayout_shrine_7_2_purchase;
+    2:  spritelayout_shrine_7_3_purchase;
+    3:  spritelayout_shrine_7_4_purchase;
+    spritelayout_shrine_7_1_purchase;
+}
+
+item (FEAT_OBJECTS, shrine_7, 806) {
+    property {
+        class: "SHRI";
+        classname: string(STR_SHRI);
+        name: string(STR_SHRI_7);
+        climates_available: ALL_CLIMATES;
+        size: [1,1];
+        build_cost_multiplier: 1;
+        remove_cost_multiplier: 4;
+        introduction_date:      date(1700,1,1);
+        end_of_life_date: 0xFFFFFFFF;
+        object_flags: bitmask(OBJ_FLAG_ANYTHING_REMOVE, OBJ_FLAG_REMOVE_IS_INCOME);
+        height: 2;
+        num_views: 4;
+     }
+    graphics {
+        default: switch_shrine_7_object;
+        purchase: switch_shrine_7_purchase;
+        autoslope: return CB_RESULT_AUTOSLOPE;
+
+      }
+}
+///////sh8
+//TOP ROW NE + SNOW//
+spriteset (spriteset_shrine_8_1) {
+    	template_tallmultipic(0,0,"gfx/normaltall_8.png")
+	template_tallmultipic(70,0,"gfx/normaltall_8.png")
+	template_tallmultipic(140,0,"gfx/normaltall_8.png")
+	template_tallmultipic(210,0,"gfx/normaltall_8.png")
+	template_tallmultipic(280,0,"gfx/normaltall_8.png")
+	template_tallmultipic(350,0,"gfx/normaltall_8.png")
+	template_tallmultipic(420,0,"gfx/normaltall_8.png")
+	template_tallmultipic(490,0,"gfx/normaltall_8.png")
+	template_tallmultipic(560,0,"gfx/normaltall_8.png")
+}
+
+alternative_sprites (spriteset_shrine_8_1, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+
+    	template_tallmultipic(0,0,"gfx/shrine_8.png")
+	template_tallmultipic(70,0,"gfx/shrine_8.png")
+	template_tallmultipic(140,0,"gfx/shrine_8.png")
+	template_tallmultipic(210,0,"gfx/shrine_8.png")
+	template_tallmultipic(280,0,"gfx/shrine_8.png")
+	template_tallmultipic(350,0,"gfx/shrine_8.png")
+	template_tallmultipic(420,0,"gfx/shrine_8.png")
+	template_tallmultipic(490,0,"gfx/shrine_8.png")
+	template_tallmultipic(560,0,"gfx/shrine_8.png")
+}
+
+spriteset (spriteset_shrine_8_1_snow) {
+    	template_tallmultipic(0,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(70,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(140,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(210,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(280,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(350,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(420,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(490,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(560,0,"gfx/normaltall_8_SNOW.png")
+}
+
+alternative_sprites (spriteset_shrine_8_1_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,0,"gfx/shrine_8_snow.png")
+	template_tallmultipic(70,0,"gfx/shrine_8_snow.png")
+	template_tallmultipic(140,0,"gfx/shrine_8_snow.png")
+	template_tallmultipic(210,0,"gfx/shrine_8_snow.png")
+	template_tallmultipic(280,0,"gfx/shrine_8_snow.png")
+	template_tallmultipic(350,0,"gfx/shrine_8_snow.png")
+	template_tallmultipic(420,0,"gfx/shrine_8_snow.png")
+	template_tallmultipic(490,0,"gfx/shrine_8_snow.png")
+	template_tallmultipic(560,0,"gfx/shrine_8_snow.png")
+}
+
+//2ND ROW NE + SNOW//
+spriteset (spriteset_shrine_8_2) {
+    	template_tallmultipic(0,120,"gfx/normaltall_8.png")
+	template_tallmultipic(70,120,"gfx/normaltall_8.png")
+	template_tallmultipic(140,120,"gfx/normaltall_8.png")
+	template_tallmultipic(210,120,"gfx/normaltall_8.png")
+	template_tallmultipic(280,120,"gfx/normaltall_8.png")
+	template_tallmultipic(350,120,"gfx/normaltall_8.png")
+	template_tallmultipic(420,120,"gfx/normaltall_8.png")
+	template_tallmultipic(490,120,"gfx/normaltall_8.png")
+	template_tallmultipic(560,120,"gfx/normaltall_8.png")
+}
+
+alternative_sprites (spriteset_shrine_8_2, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,120,"gfx/shrine_8.png")
+	template_tallmultipic(70,120,"gfx/shrine_8.png")
+	template_tallmultipic(140,120,"gfx/shrine_8.png")
+	template_tallmultipic(210,120,"gfx/shrine_8.png")
+	template_tallmultipic(280,120,"gfx/shrine_8.png")
+	template_tallmultipic(350,120,"gfx/shrine_8.png")
+	template_tallmultipic(420,120,"gfx/shrine_8.png")
+	template_tallmultipic(490,120,"gfx/shrine_8.png")
+	template_tallmultipic(560,120,"gfx/shrine_8.png")
+}
+
+spriteset (spriteset_shrine_8_2_snow) {
+    	template_tallmultipic(0,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(70,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(140,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(210,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(280,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(350,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(420,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(490,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(560,120,"gfx/normaltall_8_SNOW.png")
+}
+
+alternative_sprites (spriteset_shrine_8_2_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,120,"gfx/shrine_8_snow.png")
+	template_tallmultipic(70,120,"gfx/shrine_8_snow.png")
+	template_tallmultipic(140,120,"gfx/shrine_8_snow.png")
+	template_tallmultipic(210,120,"gfx/shrine_8_snow.png")
+	template_tallmultipic(280,120,"gfx/shrine_8_snow.png")
+	template_tallmultipic(350,120,"gfx/shrine_8_snow.png")
+	template_tallmultipic(420,120,"gfx/shrine_8_snow.png")
+	template_tallmultipic(490,120,"gfx/shrine_8_snow.png")
+	template_tallmultipic(560,120,"gfx/shrine_8_snow.png")
+}
+
+
+//3RD ROW SE + SNOW//
+spriteset (spriteset_shrine_8_3) {
+    	template_tallmultipic(0,240,"gfx/normaltall_8.png")
+	template_tallmultipic(70,240,"gfx/normaltall_8.png")
+	template_tallmultipic(140,240,"gfx/normaltall_8.png")
+	template_tallmultipic(210,240,"gfx/normaltall_8.png")
+	template_tallmultipic(280,240,"gfx/normaltall_8.png")
+	template_tallmultipic(350,240,"gfx/normaltall_8.png")
+	template_tallmultipic(420,240,"gfx/normaltall_8.png")
+	template_tallmultipic(490,240,"gfx/normaltall_8.png")
+	template_tallmultipic(560,240,"gfx/normaltall_8.png")
+}
+
+alternative_sprites (spriteset_shrine_8_3, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,240,"gfx/shrine_8.png")
+	template_tallmultipic(70,240,"gfx/shrine_8.png")
+	template_tallmultipic(140,240,"gfx/shrine_8.png")
+	template_tallmultipic(210,240,"gfx/shrine_8.png")
+	template_tallmultipic(280,240,"gfx/shrine_8.png")
+	template_tallmultipic(350,240,"gfx/shrine_8.png")
+	template_tallmultipic(420,240,"gfx/shrine_8.png")
+	template_tallmultipic(490,240,"gfx/shrine_8.png")
+	template_tallmultipic(560,240,"gfx/shrine_8.png")
+}
+
+
+spriteset (spriteset_shrine_8_3_snow) {
+    	template_tallmultipic(0,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(70,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(140,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(210,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(280,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(350,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(420,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(490,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(560,240,"gfx/normaltall_8_SNOW.png")
+}
+
+
+alternative_sprites (spriteset_shrine_8_3_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,240,"gfx/shrine_8_snow.png")
+	template_tallmultipic(70,240,"gfx/shrine_8_snow.png")
+	template_tallmultipic(140,240,"gfx/shrine_8_snow.png")
+	template_tallmultipic(210,240,"gfx/shrine_8_snow.png")
+	template_tallmultipic(280,240,"gfx/shrine_8_snow.png")
+	template_tallmultipic(350,240,"gfx/shrine_8_snow.png")
+	template_tallmultipic(420,240,"gfx/shrine_8_snow.png")
+	template_tallmultipic(490,240,"gfx/shrine_8_snow.png")
+	template_tallmultipic(560,240,"gfx/shrine_8_snow.png")
+}
+
+
+//4TH ROW + SNOW//
+spriteset (spriteset_shrine_8_4) {
+    	template_tallmultipic(0,240,"gfx/normaltall_8.png")
+	template_tallmultipic(70,240,"gfx/normaltall_8.png")
+	template_tallmultipic(140,240,"gfx/normaltall_8.png")
+	template_tallmultipic(210,240,"gfx/normaltall_8.png")	
+	template_tallmultipic(280,240,"gfx/normaltall_8.png")
+	template_tallmultipic(350,240,"gfx/normaltall_8.png")
+	template_tallmultipic(420,240,"gfx/normaltall_8.png")
+	template_tallmultipic(490,240,"gfx/normaltall_8.png")
+	template_tallmultipic(560,240,"gfx/normaltall_8.png")
+}
+
+alternative_sprites (spriteset_shrine_8_4, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,360,"gfx/shrine_8.png")
+	template_tallmultipic(70,360,"gfx/shrine_8.png")
+	template_tallmultipic(140,360,"gfx/shrine_8.png")
+	template_tallmultipic(210,360,"gfx/shrine_8.png")	
+	template_tallmultipic(280,360,"gfx/shrine_8.png")
+	template_tallmultipic(350,360,"gfx/shrine_8.png")
+	template_tallmultipic(420,360,"gfx/shrine_8.png")
+	template_tallmultipic(490,360,"gfx/shrine_8.png")
+	template_tallmultipic(560,360,"gfx/shrine_8.png")
+}
+
+spriteset (spriteset_shrine_8_4_snow) {
+    	template_tallmultipic(0,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(70,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(140,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(210,360,"gfx/normaltall_8_SNOW.png")	
+	template_tallmultipic(280,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(350,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(420,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(490,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(560,360,"gfx/normaltall_8_SNOW.png")
+}
+
+alternative_sprites (spriteset_shrine_8_4_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,360,"gfx/shrine_8_snow.png")
+	template_tallmultipic(70,360,"gfx/shrine_8_snow.png")
+	template_tallmultipic(140,360,"gfx/shrine_8_snow.png")
+	template_tallmultipic(210,360,"gfx/shrine_8_snow.png")	
+	template_tallmultipic(280,360,"gfx/shrine_8_snow.png")
+	template_tallmultipic(350,360,"gfx/shrine_8_snow.png")
+	template_tallmultipic(420,360,"gfx/shrine_8_snow.png")
+	template_tallmultipic(490,360,"gfx/shrine_8_snow.png")
+	template_tallmultipic(560,360,"gfx/shrine_8_snow.png")
+}
+
+spriteset (spriteset_shrine_8_PURCHASE) {
+    template_tallmultipic_purchase(0,0,"gfx/normaltall_8_PURCHASE.png")
+}
+
+alternative_sprites (spriteset_shrine_8_PURCHASE, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    template_tallmultipic_purchase(0,0,"gfx/shrine_8_PURCHASE.png")
+}
+
+
+//OBJECT 1 SIMPLE tallmultipic//
+//SPRITELAYOUTS//
+
+//RURAL tallmultipic LOT NE + PURCHASE//
+spritelayout spritelayout_shrine_8_1 {
+    ground {
+        sprite: LOAD_TEMP(1);
+	}
+
+	building {
+        sprite: spriteset_shrine_8_1((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type == TILETYPE_SNOW);
+    }
+	building {
+        sprite: spriteset_shrine_8_1_snow((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type != TILETYPE_SNOW);
+    }
+
+
+}
+
+spritelayout spritelayout_shrine_8_1_purchase {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+	}
+
+	building {
+        sprite: spriteset_shrine_8_PURCHASE(0);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+    }
+
+}
+
+//RURAL tallmultipic LOT SE + PURCHASE//
+spritelayout spritelayout_shrine_8_2 {
+    ground {
+        sprite: LOAD_TEMP(1);
+	}
+
+	building {
+        sprite: spriteset_shrine_8_2((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type == TILETYPE_SNOW);
+    }
+	building {
+        sprite: spriteset_shrine_8_2_snow((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type != TILETYPE_SNOW);
+    }
+
+}
+spritelayout spritelayout_shrine_8_2_purchase {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+	}
+
+	building {
+        sprite: spriteset_shrine_8_PURCHASE(1);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+    }
+
+}
+
+//OBJECT 2 SIMPLE tallmultipic//
+//tallmultipic LOT NE + PURCHASE//
+spritelayout spritelayout_shrine_8_3 {
+    ground {
+        sprite: LOAD_TEMP(1);
+	}
+
+	building {
+        sprite: spriteset_shrine_8_3((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type == TILETYPE_SNOW);
+    }
+	building {
+        sprite: spriteset_shrine_8_3_snow((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type != TILETYPE_SNOW);
+    }
+
+}
+spritelayout spritelayout_shrine_8_3_purchase {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+	}
+
+	building {
+        sprite: spriteset_shrine_8_PURCHASE(2);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+    }
+
+}
+
+//tallmultipic LOT SE + PURCHASE//
+spritelayout spritelayout_shrine_8_4 {
+    ground {
+        sprite: LOAD_TEMP(1);
+	}
+
+	building {
+        sprite: spriteset_shrine_8_4((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type == TILETYPE_SNOW);
+    }
+	building {
+        sprite: spriteset_shrine_8_4_snow((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type != TILETYPE_SNOW);
+    }
+
+}
+spritelayout spritelayout_shrine_8_4_purchase {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+	}
+
+	building {
+        sprite: spriteset_shrine_8_PURCHASE(3);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+    }
+
+}
+
+//decide spritelayout for each of the 4 views
+switch (FEAT_OBJECTS, SELF, switch_shrine_8_view, view) {
+    1:  spritelayout_shrine_8_2;
+    2:  spritelayout_shrine_8_3;
+    3:  spritelayout_shrine_8_4;
+    spritelayout_shrine_8_1;
+}
+
+//calculate ground sprite for object
+switch (FEAT_OBJECTS, SELF, switch_shrine_8_object, [
+        //tile slope offset in storage register 0
+        STORE_TEMP(0, 0),
+        //terrain type in storage register 1
+        STORE_TEMP(GROUNDSPRITE_NORMAL, 1),
+		STORE_TEMP( (nearby_tile_terrain_type(0,0) == TILETYPE_DESERT) * GROUNDSPRITE_DESERT, 1),
+		STORE_TEMP( LOAD_TEMP(1) + (LOAD_TEMP(1) == 0) * 4512 * (nearby_tile_terrain_type( 1, 0) == TILETYPE_DESERT), 1),
+		STORE_TEMP( LOAD_TEMP(1) + (LOAD_TEMP(1) == 0) * 4512 * (nearby_tile_terrain_type(-1, 0) == TILETYPE_DESERT), 1),
+		STORE_TEMP( LOAD_TEMP(1) + (LOAD_TEMP(1) == 0) * 4512 * (nearby_tile_terrain_type( 0, 1) == TILETYPE_DESERT), 1),
+		STORE_TEMP( LOAD_TEMP(1) + (LOAD_TEMP(1) == 0) * 4512 * (nearby_tile_terrain_type( 0,-1) == TILETYPE_DESERT), 1),
+		STORE_TEMP( LOAD_TEMP(1) + (LOAD_TEMP(1) == 0) * GROUNDSPRITE_NORMAL, 1),
+		STORE_TEMP(terrain_type == TILETYPE_SNOW   ? GROUNDSPRITE_SNOW : LOAD_TEMP(1), 1),
+		STORE_TEMP(snowline_height == 0xFF ? 0xFF : nearby_tile_height(0,0) - snowline_height, 127),
+		STORE_TEMP((LOAD_TEMP(127) == -1) ? GROUNDSPRITE_SNOW_1_4 : LOAD_TEMP(1), 1),
+		STORE_TEMP((LOAD_TEMP(127) ==  0) ? GROUNDSPRITE_SNOW_2_4 : LOAD_TEMP(1), 1),
+		STORE_TEMP((LOAD_TEMP(127) ==  1) ? GROUNDSPRITE_SNOW_3_4 : LOAD_TEMP(1), 1)
+        ]) {
+    switch_shrine_8_view;
+}
+
+//decide spritelayout for the purchase menu
+switch (FEAT_OBJECTS, SELF, switch_shrine_8_purchase, view) {
+    1:  spritelayout_shrine_8_2_purchase;
+    2:  spritelayout_shrine_8_3_purchase;
+    3:  spritelayout_shrine_8_4_purchase;
+    spritelayout_shrine_8_1_purchase;
+}
+
+switch (FEAT_OBJECTS, SELF, switch_add_text_STR_shrine_8, view) {
+1: string(STR_shrine_8_purchase_view2);
+2: string(STR_shrine_8_purchase_view3);
+3: string(STR_shrine_8_purchase_view4);
+default: string(STR_shrine_8_purchase_view1);
+}
+
+item (FEAT_OBJECTS, item_shrine_8, 807) {
+    property {
+        class:                  "SHRI";
+	    classname:		        string(STR_SHRI);
+        name:                   string(STR_shrine_8);
+        climates_available:     ALL_CLIMATES;
+        size:                   [1,1];
+        build_cost_multiplier:  0;
+        remove_cost_multiplier: 0;
+        introduction_date:      date(1111,1,1);
+        end_of_life_date:       0xFFFFFFFF;
+        object_flags:           bitmask(OBJ_FLAG_ANYTHING_REMOVE, OBJ_FLAG_ON_WATER, OBJ_FLAG_REMOVE_IS_INCOME, OBJ_FLAG_DRAW_WATER);
+//	animation_info:			[ANIMATION_LOOPING, 9];
+//	animation_speed:		7;
+//	animation_triggers:		3;
+        height:                 1;
+        num_views:              4;
+    }
+    graphics {
+        default:            switch_shrine_8_object;
+        purchase:           switch_shrine_8_purchase;
+        autoslope:          return(CB_RESULT_AUTOSLOPE);
+//      additional_text:    string(STR_tallmultipic_1_PURCHASE);
+        additional_text:    switch_add_text_STR_shrine_8;
+	anim_control:    	return CB_RESULT_NEXT_FRAME;
+	anim_next_frame: 	return CB_RESULT_NEXT_FRAME;
+    }
 }
 //////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
