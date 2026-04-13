@@ -1,9 +1,9 @@
 ##grflangid 0x01
 
 #Main grf title and description
-STR_GRF_NAME        :JP Style Objects Buildings V3.81
-STR_GRF_DESCRIPTION :{YELLOW}JP Style Objects ,2025/3/12. {}{YELLOW}Introduce various buildings, inspired by the lovely scenery of Japan.{}{WHITE}Draw by: Zyliety, GarryG, Mrsunman, Lorenzolu. {}Code by:Zyliety.{}License:GPLv2 or higher
-STR_GRF_URL         :https://github.com/zyliety/Japan-style-Objects-buildings
+STR_GRF_NAME        :JP Style Objects Buildings V3.82
+STR_GRF_DESCRIPTION :{YELLOW}JP Style Objects ,2025/4/13. {}{YELLOW}Introduce various buildings, inspired by the lovely scenery of Japan.{}{WHITE}Draw by: Zyliety, GarryG, Mrsunman, Lorenzolu. {}Code by:Zyliety.{}License:GPLv2 or higher
+STR_GRF_URL         :https://github.com/zyliety
 
 #error messages
 STR_OPENTTD_VERSION :1.2.0 (r22723)
@@ -57,13 +57,25 @@ STR_single_house_3		:Single house 3
 STR_single_house_3_purchase_view1		:Nakasato House
 STR_single_house_3_purchase_view2		:Misaka House
 STR_single_house_3_purchase_view3		:Hidamari Apartment
-STR_single_house_3_purchase_view4		:WIP
+STR_single_house_3_purchase_view4		:Kaede House
 
 STR_single_house_4		:Single house 4   
 STR_single_house_4_purchase_view1		:Nakasato House
 STR_single_house_4_purchase_view2		:Misaka House
 STR_single_house_4_purchase_view3		:Hidamari Apartment
-STR_single_house_4_purchase_view4		:WIP
+STR_single_house_4_purchase_view4		:Kaede House
+
+STR_single_house_5		:Single house 5   
+STR_single_house_5_purchase_view1		:Hakuba (old-style post office)
+STR_single_house_5_purchase_view2		:Hakuba (old-style post office)
+STR_single_house_5_purchase_view3		:Hakuba (old-style post office)
+STR_single_house_5_purchase_view4		:Hakuba (old-style post office)
+
+STR_single_house_6		:Single house 6   
+STR_single_house_6_purchase_view1		:Hakuba (old-style post office)
+STR_single_house_6_purchase_view2		:Hakuba (old-style post office)
+STR_single_house_6_purchase_view3		:Hakuba (old-style post office)
+STR_single_house_6_purchase_view4		:Hakuba (old-style post office)
 
 STR_farm_house_1		:Traditional houses 1  
 STR_farm_house_1_purchase_view1		:Noka
@@ -254,7 +266,7 @@ STR_OFFB_1      :Office Building 1
 STR_OFFB_2      :Office Building 2
 STR_OFFB_3      :Office Building 3
 STR_OFFB_4      :Office Building 4
-STR_OFFB_5      :NTT Office Building
+STR_OFFB_5      :NTT Office Building/Radio Tower
 
 
 STR_DACH_1      :Danchi
@@ -311,6 +323,13 @@ STR_public_building_10_purchase_view2    :Senior high school(modern style)
 STR_public_building_10_purchase_view3    :Senior high school(modern style)
 STR_public_building_10_purchase_view4    :Senior high school(modern style)
 
+STR_public_building_11		:Post Office(L)2x2
+STR_public_building_11_purchase_view1		:Post Office(L)2x2
+STR_public_building_11_purchase_view2		:Post Office(L)2x2
+STR_public_building_11_purchase_view3		:Post Office(L)2x2
+STR_public_building_11_purchase_view4		:Post Office(L)2x2
+
+
 STR_SHRI_1     :Shrine 1
 STR_SHRI_2     :Shrine 2
 STR_SHRI_3     :Shrine 3
@@ -348,6 +367,7 @@ STR_STBD_5     :Hino Station
 STR_STBD_6     :Arihata Station
 STR_STBD_7     :Kodama Station
 STR_STBD_8     :Meiji period Station
+STR_STBD_9     :Ishikari-Numata Station
 
 STR_WAHE_1     :Warehouse 1
 STR_WAHE_2     :Warehouse in countryside (1x2)
