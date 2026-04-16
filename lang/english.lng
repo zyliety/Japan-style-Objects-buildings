@@ -1,9 +1,9 @@
 ##grflangid 0x01
 
 #Main grf title and description
-STR_GRF_NAME        :JP Style Objects Buildings V3.82
-STR_GRF_DESCRIPTION :{YELLOW}JP Style Objects ,2025/4/13. {}{YELLOW}Introduce various buildings, inspired by the lovely scenery of Japan.{}{WHITE}Draw by: Zyliety, GarryG, Mrsunman, Lorenzolu. {}Code by:Zyliety.{}License:GPLv2 or higher
-STR_GRF_URL         :https://github.com/zyliety
+STR_GRF_NAME        :JP Style Objects Buildings V3.9
+STR_GRF_DESCRIPTION :{YELLOW}JP Style Objects ,2026/4/16. {}{YELLOW}Introduce various buildings, inspired by the lovely scenery of Japan.{}{WHITE}Draw by: Zyliety, GarryG, Mrsunman, Lorenzolu. {}Code by:Zyliety.{}License:GPLv2 or higher
+STR_GRF_URL         :https://github.com/zyliety/Japan-style-Objects-buildings
 
 #error messages
 STR_OPENTTD_VERSION :1.2.0 (r22723)
@@ -262,6 +262,30 @@ STR_parking_17_purchase_view2		:Parking lot
 STR_parking_17_purchase_view3		:Parking lot
 STR_parking_17_purchase_view4		:Parking lot
 
+STR_parking_18		:bicycle parking lot(shed)
+STR_parking_18_purchase_view1		:bicycle parking lot(shed)
+STR_parking_18_purchase_view2		:bicycle parking lot(shed)
+STR_parking_18_purchase_view3		:bicycle parking lot(shed)
+STR_parking_18_purchase_view4		:bicycle parking lot(shed)
+
+STR_parking_19		:bicycle parking lot(shed)
+STR_parking_19_purchase_view1		:bicycle parking lot(shed)
+STR_parking_19_purchase_view2		:bicycle parking lot(shed)
+STR_parking_19_purchase_view3		:bicycle parking lot(shed)
+STR_parking_19_purchase_view4		:bicycle parking lot(shed)
+
+STR_parking_20		:bicycle parking lot(shed)
+STR_parking_20_purchase_view1		:bicycle parking lot(shed)
+STR_parking_20_purchase_view2		:bicycle parking lot(shed)
+STR_parking_20_purchase_view3		:bicycle parking lot(shed)
+STR_parking_20_purchase_view4		:bicycle parking lot(shed)
+
+STR_parking_21		:bicycle parking lot(shed)
+STR_parking_21_purchase_view1		:bicycle parking lot(shed)
+STR_parking_21_purchase_view2		:bicycle parking lot(shed)
+STR_parking_21_purchase_view3		:bicycle parking lot(shed)
+STR_parking_21_purchase_view4		:bicycle parking lot(shed)
+
 STR_OFFB_1      :Office Building 1
 STR_OFFB_2      :Office Building 2
 STR_OFFB_3      :Office Building 3
@@ -287,7 +311,7 @@ STR_DACH_13      :Danchi
 STR_PUBB_1      :Post Office
 STR_PUBB_2      :Post Office(L)/Fire Station
 STR_PUBB_3      :Petrol Station
-STR_PUBB_4      :Fire Station(1x2)
+STR_PUBB_4      :Fire Station/Police Station(1x2)
 
 STR_PUBB_5      :NHK/Petrol Station(2x2)
 STR_public_building_5_purchase_view1		:NHK/Petrol Station(2x2)
