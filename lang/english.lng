@@ -1,7 +1,7 @@
 ##grflangid 0x01
 
 #Main grf title and description
-STR_GRF_NAME        :JP Style Objects Buildings V3.9
+STR_GRF_NAME        :JP Style Objects Buildings V3.91
 STR_GRF_DESCRIPTION :{YELLOW}JP Style Objects ,2026/4/16. {}{YELLOW}Introduce various buildings, inspired by the lovely scenery of Japan.{}{WHITE}Draw by: Zyliety, GarryG, Mrsunman, Lorenzolu. {}Code by:Zyliety.{}License:GPLv2 or higher
 STR_GRF_URL         :https://github.com/zyliety/Japan-style-Objects-buildings
 
@@ -285,6 +285,32 @@ STR_parking_21_purchase_view1		:bicycle parking lot(shed)
 STR_parking_21_purchase_view2		:bicycle parking lot(shed)
 STR_parking_21_purchase_view3		:bicycle parking lot(shed)
 STR_parking_21_purchase_view4		:bicycle parking lot(shed)
+
+STR_parking_22		:bicycle parking lot(shed)
+STR_parking_22_purchase_view1		:bicycle parking lot(shed)
+STR_parking_22_purchase_view2		:bicycle parking lot(shed)
+STR_parking_22_purchase_view3		:bicycle parking lot
+STR_parking_22_purchase_view4		:bicycle parking lot
+
+STR_parking_23		:bicycle parking lot(shed)
+STR_parking_23_purchase_view1		:bicycle parking lot(shed)
+STR_parking_23_purchase_view2		:bicycle parking lot(shed)
+STR_parking_23_purchase_view3		:bicycle parking lot(de)
+STR_parking_23_purchase_view4		:bicycle parking lot(de)
+
+STR_parking_24		:bicycle parking lot(shed)
+STR_parking_24_purchase_view1		:bicycle parking lot(shed)
+STR_parking_24_purchase_view2		:bicycle parking lot(shed)
+STR_parking_24_purchase_view3		:bicycle parking lot
+STR_parking_24_purchase_view4		:bicycle parking lot
+
+STR_parking_25		:bicycle parking lot(shed)
+STR_parking_25_purchase_view1		:bicycle parking lot(shed)
+STR_parking_25_purchase_view2		:bicycle parking lot(shed)
+STR_parking_25_purchase_view3		:bicycle parking lot(de)
+STR_parking_25_purchase_view4		:bicycle parking lot(de)
+
+
 
 STR_OFFB_1      :Office Building 1
 STR_OFFB_2      :Office Building 2

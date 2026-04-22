@@ -11,7 +11,7 @@ grf {
     name:                   string(STR_GRF_NAME);
     desc:                   string(STR_GRF_DESCRIPTION);
      url:                   string(STR_GRF_URL);
-    version:                390;
+    version:                391;
     min_compatible_version: 1;
 }
 template template_flat_low_building(x,y,filename) {
@@ -24690,6 +24690,1734 @@ item (FEAT_OBJECTS, item_parking_21, 420) {
         autoslope:          return(CB_RESULT_AUTOSLOPE);
 //      additional_text:    string(STR_tallmultipic_1_PURCHASE);
         additional_text:    switch_add_text_STR_parking_21;
+	anim_control:    	return CB_RESULT_NEXT_FRAME;
+	anim_next_frame: 	return CB_RESULT_NEXT_FRAME;
+    }
+}
+/////pa22///
+spriteset (spriteset_parking_22_1) {
+    	template_tallmultipic(0,0,"gfx/normaltall_8.png")
+	template_tallmultipic(70,0,"gfx/normaltall_8.png")
+	template_tallmultipic(140,0,"gfx/normaltall_8.png")
+	template_tallmultipic(210,0,"gfx/normaltall_8.png")
+	template_tallmultipic(280,0,"gfx/normaltall_8.png")
+	template_tallmultipic(350,0,"gfx/normaltall_8.png")
+	template_tallmultipic(420,0,"gfx/normaltall_8.png")
+	template_tallmultipic(490,0,"gfx/normaltall_8.png")
+	template_tallmultipic(560,0,"gfx/normaltall_8.png")
+}
+
+alternative_sprites (spriteset_parking_22_1, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+
+    	template_tallmultipic(0,0,"gfx/parking_22.png")
+	template_tallmultipic(70,0,"gfx/parking_22.png")
+	template_tallmultipic(140,0,"gfx/parking_22.png")
+	template_tallmultipic(210,0,"gfx/parking_22.png")
+	template_tallmultipic(280,0,"gfx/parking_22.png")
+	template_tallmultipic(350,0,"gfx/parking_22.png")
+	template_tallmultipic(420,0,"gfx/parking_22.png")
+	template_tallmultipic(490,0,"gfx/parking_22.png")
+	template_tallmultipic(560,0,"gfx/parking_22.png")
+}
+
+spriteset (spriteset_parking_22_1_snow) {
+    	template_tallmultipic(0,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(70,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(140,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(210,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(280,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(350,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(420,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(490,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(560,0,"gfx/normaltall_8_SNOW.png")
+}
+
+alternative_sprites (spriteset_parking_22_1_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,0,"gfx/parking_22_snow.png")
+	template_tallmultipic(70,0,"gfx/parking_22_snow.png")
+	template_tallmultipic(140,0,"gfx/parking_22_snow.png")
+	template_tallmultipic(210,0,"gfx/parking_22_snow.png")
+	template_tallmultipic(280,0,"gfx/parking_22_snow.png")
+	template_tallmultipic(350,0,"gfx/parking_22_snow.png")
+	template_tallmultipic(420,0,"gfx/parking_22_snow.png")
+	template_tallmultipic(490,0,"gfx/parking_22_snow.png")
+	template_tallmultipic(560,0,"gfx/parking_22_snow.png")
+}
+
+//2ND ROW NE + SNOW//
+spriteset (spriteset_parking_22_2) {
+    	template_tallmultipic(0,120,"gfx/normaltall_8.png")
+	template_tallmultipic(70,120,"gfx/normaltall_8.png")
+	template_tallmultipic(140,120,"gfx/normaltall_8.png")
+	template_tallmultipic(210,120,"gfx/normaltall_8.png")
+	template_tallmultipic(280,120,"gfx/normaltall_8.png")
+	template_tallmultipic(350,120,"gfx/normaltall_8.png")
+	template_tallmultipic(420,120,"gfx/normaltall_8.png")
+	template_tallmultipic(490,120,"gfx/normaltall_8.png")
+	template_tallmultipic(560,120,"gfx/normaltall_8.png")
+}
+
+alternative_sprites (spriteset_parking_22_2, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,120,"gfx/parking_22.png")
+	template_tallmultipic(70,120,"gfx/parking_22.png")
+	template_tallmultipic(140,120,"gfx/parking_22.png")
+	template_tallmultipic(210,120,"gfx/parking_22.png")
+	template_tallmultipic(280,120,"gfx/parking_22.png")
+	template_tallmultipic(350,120,"gfx/parking_22.png")
+	template_tallmultipic(420,120,"gfx/parking_22.png")
+	template_tallmultipic(490,120,"gfx/parking_22.png")
+	template_tallmultipic(560,120,"gfx/parking_22.png")
+}
+
+spriteset (spriteset_parking_22_2_snow) {
+    	template_tallmultipic(0,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(70,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(140,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(210,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(280,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(350,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(420,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(490,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(560,120,"gfx/normaltall_8_SNOW.png")
+}
+
+alternative_sprites (spriteset_parking_22_2_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,120,"gfx/parking_22_snow.png")
+	template_tallmultipic(70,120,"gfx/parking_22_snow.png")
+	template_tallmultipic(140,120,"gfx/parking_22_snow.png")
+	template_tallmultipic(210,120,"gfx/parking_22_snow.png")
+	template_tallmultipic(280,120,"gfx/parking_22_snow.png")
+	template_tallmultipic(350,120,"gfx/parking_22_snow.png")
+	template_tallmultipic(420,120,"gfx/parking_22_snow.png")
+	template_tallmultipic(490,120,"gfx/parking_22_snow.png")
+	template_tallmultipic(560,120,"gfx/parking_22_snow.png")
+}
+
+
+//3RD ROW SE + SNOW//
+spriteset (spriteset_parking_22_3) {
+    	template_tallmultipic(0,240,"gfx/normaltall_8.png")
+	template_tallmultipic(70,240,"gfx/normaltall_8.png")
+	template_tallmultipic(140,240,"gfx/normaltall_8.png")
+	template_tallmultipic(210,240,"gfx/normaltall_8.png")
+	template_tallmultipic(280,240,"gfx/normaltall_8.png")
+	template_tallmultipic(350,240,"gfx/normaltall_8.png")
+	template_tallmultipic(420,240,"gfx/normaltall_8.png")
+	template_tallmultipic(490,240,"gfx/normaltall_8.png")
+	template_tallmultipic(560,240,"gfx/normaltall_8.png")
+}
+
+alternative_sprites (spriteset_parking_22_3, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,240,"gfx/parking_22.png")
+	template_tallmultipic(70,240,"gfx/parking_22.png")
+	template_tallmultipic(140,240,"gfx/parking_22.png")
+	template_tallmultipic(210,240,"gfx/parking_22.png")
+	template_tallmultipic(280,240,"gfx/parking_22.png")
+	template_tallmultipic(350,240,"gfx/parking_22.png")
+	template_tallmultipic(420,240,"gfx/parking_22.png")
+	template_tallmultipic(490,240,"gfx/parking_22.png")
+	template_tallmultipic(560,240,"gfx/parking_22.png")
+}
+
+
+spriteset (spriteset_parking_22_3_snow) {
+    	template_tallmultipic(0,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(70,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(140,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(210,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(280,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(350,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(420,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(490,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(560,240,"gfx/normaltall_8_SNOW.png")
+}
+
+
+alternative_sprites (spriteset_parking_22_3_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,240,"gfx/parking_22_snow.png")
+	template_tallmultipic(70,240,"gfx/parking_22_snow.png")
+	template_tallmultipic(140,240,"gfx/parking_22_snow.png")
+	template_tallmultipic(210,240,"gfx/parking_22_snow.png")
+	template_tallmultipic(280,240,"gfx/parking_22_snow.png")
+	template_tallmultipic(350,240,"gfx/parking_22_snow.png")
+	template_tallmultipic(420,240,"gfx/parking_22_snow.png")
+	template_tallmultipic(490,240,"gfx/parking_22_snow.png")
+	template_tallmultipic(560,240,"gfx/parking_22_snow.png")
+}
+
+
+//4TH ROW + SNOW//
+spriteset (spriteset_parking_22_4) {
+    	template_tallmultipic(0,240,"gfx/normaltall_8.png")
+	template_tallmultipic(70,240,"gfx/normaltall_8.png")
+	template_tallmultipic(140,240,"gfx/normaltall_8.png")
+	template_tallmultipic(210,240,"gfx/normaltall_8.png")	
+	template_tallmultipic(280,240,"gfx/normaltall_8.png")
+	template_tallmultipic(350,240,"gfx/normaltall_8.png")
+	template_tallmultipic(420,240,"gfx/normaltall_8.png")
+	template_tallmultipic(490,240,"gfx/normaltall_8.png")
+	template_tallmultipic(560,240,"gfx/normaltall_8.png")
+}
+
+alternative_sprites (spriteset_parking_22_4, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,360,"gfx/parking_22.png")
+	template_tallmultipic(70,360,"gfx/parking_22.png")
+	template_tallmultipic(140,360,"gfx/parking_22.png")
+	template_tallmultipic(210,360,"gfx/parking_22.png")	
+	template_tallmultipic(280,360,"gfx/parking_22.png")
+	template_tallmultipic(350,360,"gfx/parking_22.png")
+	template_tallmultipic(420,360,"gfx/parking_22.png")
+	template_tallmultipic(490,360,"gfx/parking_22.png")
+	template_tallmultipic(560,360,"gfx/parking_22.png")
+}
+
+spriteset (spriteset_parking_22_4_snow) {
+    	template_tallmultipic(0,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(70,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(140,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(210,360,"gfx/normaltall_8_SNOW.png")	
+	template_tallmultipic(280,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(350,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(420,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(490,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(560,360,"gfx/normaltall_8_SNOW.png")
+}
+
+alternative_sprites (spriteset_parking_22_4_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,360,"gfx/parking_22_snow.png")
+	template_tallmultipic(70,360,"gfx/parking_22_snow.png")
+	template_tallmultipic(140,360,"gfx/parking_22_snow.png")
+	template_tallmultipic(210,360,"gfx/parking_22_snow.png")	
+	template_tallmultipic(280,360,"gfx/parking_22_snow.png")
+	template_tallmultipic(350,360,"gfx/parking_22_snow.png")
+	template_tallmultipic(420,360,"gfx/parking_22_snow.png")
+	template_tallmultipic(490,360,"gfx/parking_22_snow.png")
+	template_tallmultipic(560,360,"gfx/parking_22_snow.png")
+}
+
+spriteset (spriteset_parking_22_PURCHASE) {
+    template_tallmultipic_purchase(0,0,"gfx/normaltall_8_PURCHASE.png")
+}
+
+alternative_sprites (spriteset_parking_22_PURCHASE, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    template_tallmultipic_purchase(0,0,"gfx/parking_22_PURCHASE.png")
+}
+
+
+//OBJECT 1 SIMPLE tallmultipic//
+//SPRITELAYOUTS//
+
+//RURAL tallmultipic LOT NE + PURCHASE//
+spritelayout spritelayout_parking_22_1 {
+    ground {
+        sprite: LOAD_TEMP(1);
+	}
+
+	building {
+        sprite: spriteset_parking_22_1((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type == TILETYPE_SNOW);
+    }
+	building {
+        sprite: spriteset_parking_22_1_snow((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type != TILETYPE_SNOW);
+    }
+
+
+}
+
+spritelayout spritelayout_parking_22_1_purchase {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+	}
+
+	building {
+        sprite: spriteset_parking_22_PURCHASE(0);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+    }
+
+}
+
+//RURAL tallmultipic LOT SE + PURCHASE//
+spritelayout spritelayout_parking_22_2 {
+    ground {
+        sprite: LOAD_TEMP(1);
+	}
+
+	building {
+        sprite: spriteset_parking_22_2((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type == TILETYPE_SNOW);
+    }
+	building {
+        sprite: spriteset_parking_22_2_snow((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type != TILETYPE_SNOW);
+    }
+
+}
+spritelayout spritelayout_parking_22_2_purchase {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+	}
+
+	building {
+        sprite: spriteset_parking_22_PURCHASE(1);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+    }
+
+}
+
+//OBJECT 2 SIMPLE tallmultipic//
+//tallmultipic LOT NE + PURCHASE//
+spritelayout spritelayout_parking_22_3 {
+    ground {
+        sprite: LOAD_TEMP(1);
+	}
+
+	building {
+        sprite: spriteset_parking_22_3((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type == TILETYPE_SNOW);
+    }
+	building {
+        sprite: spriteset_parking_22_3_snow((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type != TILETYPE_SNOW);
+    }
+
+}
+spritelayout spritelayout_parking_22_3_purchase {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+	}
+
+	building {
+        sprite: spriteset_parking_22_PURCHASE(2);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+    }
+
+}
+
+//tallmultipic LOT SE + PURCHASE//
+spritelayout spritelayout_parking_22_4 {
+    ground {
+        sprite: LOAD_TEMP(1);
+	}
+
+	building {
+        sprite: spriteset_parking_22_4((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type == TILETYPE_SNOW);
+    }
+	building {
+        sprite: spriteset_parking_22_4_snow((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type != TILETYPE_SNOW);
+    }
+
+}
+spritelayout spritelayout_parking_22_4_purchase {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+	}
+
+	building {
+        sprite: spriteset_parking_22_PURCHASE(3);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+    }
+
+}
+
+//decide spritelayout for each of the 4 views
+switch (FEAT_OBJECTS, SELF, switch_parking_22_view, view) {
+    1:  spritelayout_parking_22_2;
+    2:  spritelayout_parking_22_3;
+    3:  spritelayout_parking_22_4;
+    spritelayout_parking_22_1;
+}
+
+//calculate ground sprite for object
+switch (FEAT_OBJECTS, SELF, switch_parking_22_object, [
+        //tile slope offset in storage register 0
+        STORE_TEMP(0, 0),
+        //terrain type in storage register 1
+        STORE_TEMP(GROUNDSPRITE_NORMAL, 1),
+		STORE_TEMP( (nearby_tile_terrain_type(0,0) == TILETYPE_DESERT) * GROUNDSPRITE_DESERT, 1),
+		STORE_TEMP( LOAD_TEMP(1) + (LOAD_TEMP(1) == 0) * 4512 * (nearby_tile_terrain_type( 1, 0) == TILETYPE_DESERT), 1),
+		STORE_TEMP( LOAD_TEMP(1) + (LOAD_TEMP(1) == 0) * 4512 * (nearby_tile_terrain_type(-1, 0) == TILETYPE_DESERT), 1),
+		STORE_TEMP( LOAD_TEMP(1) + (LOAD_TEMP(1) == 0) * 4512 * (nearby_tile_terrain_type( 0, 1) == TILETYPE_DESERT), 1),
+		STORE_TEMP( LOAD_TEMP(1) + (LOAD_TEMP(1) == 0) * 4512 * (nearby_tile_terrain_type( 0,-1) == TILETYPE_DESERT), 1),
+		STORE_TEMP( LOAD_TEMP(1) + (LOAD_TEMP(1) == 0) * GROUNDSPRITE_NORMAL, 1),
+		STORE_TEMP(terrain_type == TILETYPE_SNOW   ? GROUNDSPRITE_SNOW : LOAD_TEMP(1), 1),
+		STORE_TEMP(snowline_height == 0xFF ? 0xFF : nearby_tile_height(0,0) - snowline_height, 127),
+		STORE_TEMP((LOAD_TEMP(127) == -1) ? GROUNDSPRITE_SNOW_1_4 : LOAD_TEMP(1), 1),
+		STORE_TEMP((LOAD_TEMP(127) ==  0) ? GROUNDSPRITE_SNOW_2_4 : LOAD_TEMP(1), 1),
+		STORE_TEMP((LOAD_TEMP(127) ==  1) ? GROUNDSPRITE_SNOW_3_4 : LOAD_TEMP(1), 1)
+        ]) {
+    switch_parking_22_view;
+}
+
+//decide spritelayout for the purchase menu
+switch (FEAT_OBJECTS, SELF, switch_parking_22_purchase, view) {
+    1:  spritelayout_parking_22_2_purchase;
+    2:  spritelayout_parking_22_3_purchase;
+    3:  spritelayout_parking_22_4_purchase;
+    spritelayout_parking_22_1_purchase;
+}
+
+switch (FEAT_OBJECTS, SELF, switch_add_text_STR_parking_22, view) {
+1: string(STR_parking_22_purchase_view2);
+2: string(STR_parking_22_purchase_view3);
+3: string(STR_parking_22_purchase_view4);
+default: string(STR_parking_22_purchase_view1);
+}
+
+item (FEAT_OBJECTS, item_parking_22, 421) {
+    property {
+        class:                  "PALO";
+	classname:		string(STR_PALO);
+        name:                   string(STR_parking_22);
+        climates_available:     ALL_CLIMATES;
+        size:                   [1,1];
+        build_cost_multiplier:  0;
+        remove_cost_multiplier: 0;
+        introduction_date:      date(1111,1,1);
+        end_of_life_date:       0xFFFFFFFF;
+        object_flags:           bitmask(OBJ_FLAG_ANYTHING_REMOVE);
+//	animation_info:			[ANIMATION_LOOPING, 9];
+//	animation_speed:		7;
+//	animation_triggers:		3;
+        height:                 1;
+        num_views:              4;
+    }
+    graphics {
+        default:            switch_parking_22_object;
+        purchase:           switch_parking_22_purchase;
+        autoslope:          return(CB_RESULT_AUTOSLOPE);
+//      additional_text:    string(STR_tallmultipic_1_PURCHASE);
+        additional_text:    switch_add_text_STR_parking_22;
+	anim_control:    	return CB_RESULT_NEXT_FRAME;
+	anim_next_frame: 	return CB_RESULT_NEXT_FRAME;
+    }
+}
+/////pa23///////
+spriteset (spriteset_parking_23_1) {
+    	template_tallmultipic(0,0,"gfx/normaltall_8.png")
+	template_tallmultipic(70,0,"gfx/normaltall_8.png")
+	template_tallmultipic(140,0,"gfx/normaltall_8.png")
+	template_tallmultipic(210,0,"gfx/normaltall_8.png")
+	template_tallmultipic(280,0,"gfx/normaltall_8.png")
+	template_tallmultipic(350,0,"gfx/normaltall_8.png")
+	template_tallmultipic(420,0,"gfx/normaltall_8.png")
+	template_tallmultipic(490,0,"gfx/normaltall_8.png")
+	template_tallmultipic(560,0,"gfx/normaltall_8.png")
+}
+
+alternative_sprites (spriteset_parking_23_1, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+
+    	template_tallmultipic(0,0,"gfx/parking_23.png")
+	template_tallmultipic(70,0,"gfx/parking_23.png")
+	template_tallmultipic(140,0,"gfx/parking_23.png")
+	template_tallmultipic(210,0,"gfx/parking_23.png")
+	template_tallmultipic(280,0,"gfx/parking_23.png")
+	template_tallmultipic(350,0,"gfx/parking_23.png")
+	template_tallmultipic(420,0,"gfx/parking_23.png")
+	template_tallmultipic(490,0,"gfx/parking_23.png")
+	template_tallmultipic(560,0,"gfx/parking_23.png")
+}
+
+spriteset (spriteset_parking_23_1_snow) {
+    	template_tallmultipic(0,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(70,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(140,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(210,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(280,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(350,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(420,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(490,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(560,0,"gfx/normaltall_8_SNOW.png")
+}
+
+alternative_sprites (spriteset_parking_23_1_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,0,"gfx/parking_23_snow.png")
+	template_tallmultipic(70,0,"gfx/parking_23_snow.png")
+	template_tallmultipic(140,0,"gfx/parking_23_snow.png")
+	template_tallmultipic(210,0,"gfx/parking_23_snow.png")
+	template_tallmultipic(280,0,"gfx/parking_23_snow.png")
+	template_tallmultipic(350,0,"gfx/parking_23_snow.png")
+	template_tallmultipic(420,0,"gfx/parking_23_snow.png")
+	template_tallmultipic(490,0,"gfx/parking_23_snow.png")
+	template_tallmultipic(560,0,"gfx/parking_23_snow.png")
+}
+
+//2ND ROW NE + SNOW//
+spriteset (spriteset_parking_23_2) {
+    	template_tallmultipic(0,120,"gfx/normaltall_8.png")
+	template_tallmultipic(70,120,"gfx/normaltall_8.png")
+	template_tallmultipic(140,120,"gfx/normaltall_8.png")
+	template_tallmultipic(210,120,"gfx/normaltall_8.png")
+	template_tallmultipic(280,120,"gfx/normaltall_8.png")
+	template_tallmultipic(350,120,"gfx/normaltall_8.png")
+	template_tallmultipic(420,120,"gfx/normaltall_8.png")
+	template_tallmultipic(490,120,"gfx/normaltall_8.png")
+	template_tallmultipic(560,120,"gfx/normaltall_8.png")
+}
+
+alternative_sprites (spriteset_parking_23_2, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,120,"gfx/parking_23.png")
+	template_tallmultipic(70,120,"gfx/parking_23.png")
+	template_tallmultipic(140,120,"gfx/parking_23.png")
+	template_tallmultipic(210,120,"gfx/parking_23.png")
+	template_tallmultipic(280,120,"gfx/parking_23.png")
+	template_tallmultipic(350,120,"gfx/parking_23.png")
+	template_tallmultipic(420,120,"gfx/parking_23.png")
+	template_tallmultipic(490,120,"gfx/parking_23.png")
+	template_tallmultipic(560,120,"gfx/parking_23.png")
+}
+
+spriteset (spriteset_parking_23_2_snow) {
+    	template_tallmultipic(0,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(70,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(140,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(210,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(280,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(350,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(420,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(490,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(560,120,"gfx/normaltall_8_SNOW.png")
+}
+
+alternative_sprites (spriteset_parking_23_2_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,120,"gfx/parking_23_snow.png")
+	template_tallmultipic(70,120,"gfx/parking_23_snow.png")
+	template_tallmultipic(140,120,"gfx/parking_23_snow.png")
+	template_tallmultipic(210,120,"gfx/parking_23_snow.png")
+	template_tallmultipic(280,120,"gfx/parking_23_snow.png")
+	template_tallmultipic(350,120,"gfx/parking_23_snow.png")
+	template_tallmultipic(420,120,"gfx/parking_23_snow.png")
+	template_tallmultipic(490,120,"gfx/parking_23_snow.png")
+	template_tallmultipic(560,120,"gfx/parking_23_snow.png")
+}
+
+
+//3RD ROW SE + SNOW//
+spriteset (spriteset_parking_23_3) {
+    	template_tallmultipic(0,240,"gfx/normaltall_8.png")
+	template_tallmultipic(70,240,"gfx/normaltall_8.png")
+	template_tallmultipic(140,240,"gfx/normaltall_8.png")
+	template_tallmultipic(210,240,"gfx/normaltall_8.png")
+	template_tallmultipic(280,240,"gfx/normaltall_8.png")
+	template_tallmultipic(350,240,"gfx/normaltall_8.png")
+	template_tallmultipic(420,240,"gfx/normaltall_8.png")
+	template_tallmultipic(490,240,"gfx/normaltall_8.png")
+	template_tallmultipic(560,240,"gfx/normaltall_8.png")
+}
+
+alternative_sprites (spriteset_parking_23_3, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,240,"gfx/parking_23.png")
+	template_tallmultipic(70,240,"gfx/parking_23.png")
+	template_tallmultipic(140,240,"gfx/parking_23.png")
+	template_tallmultipic(210,240,"gfx/parking_23.png")
+	template_tallmultipic(280,240,"gfx/parking_23.png")
+	template_tallmultipic(350,240,"gfx/parking_23.png")
+	template_tallmultipic(420,240,"gfx/parking_23.png")
+	template_tallmultipic(490,240,"gfx/parking_23.png")
+	template_tallmultipic(560,240,"gfx/parking_23.png")
+}
+
+
+spriteset (spriteset_parking_23_3_snow) {
+    	template_tallmultipic(0,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(70,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(140,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(210,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(280,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(350,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(420,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(490,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(560,240,"gfx/normaltall_8_SNOW.png")
+}
+
+
+alternative_sprites (spriteset_parking_23_3_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,240,"gfx/parking_23_snow.png")
+	template_tallmultipic(70,240,"gfx/parking_23_snow.png")
+	template_tallmultipic(140,240,"gfx/parking_23_snow.png")
+	template_tallmultipic(210,240,"gfx/parking_23_snow.png")
+	template_tallmultipic(280,240,"gfx/parking_23_snow.png")
+	template_tallmultipic(350,240,"gfx/parking_23_snow.png")
+	template_tallmultipic(420,240,"gfx/parking_23_snow.png")
+	template_tallmultipic(490,240,"gfx/parking_23_snow.png")
+	template_tallmultipic(560,240,"gfx/parking_23_snow.png")
+}
+
+
+//4TH ROW + SNOW//
+spriteset (spriteset_parking_23_4) {
+    	template_tallmultipic(0,240,"gfx/normaltall_8.png")
+	template_tallmultipic(70,240,"gfx/normaltall_8.png")
+	template_tallmultipic(140,240,"gfx/normaltall_8.png")
+	template_tallmultipic(210,240,"gfx/normaltall_8.png")	
+	template_tallmultipic(280,240,"gfx/normaltall_8.png")
+	template_tallmultipic(350,240,"gfx/normaltall_8.png")
+	template_tallmultipic(420,240,"gfx/normaltall_8.png")
+	template_tallmultipic(490,240,"gfx/normaltall_8.png")
+	template_tallmultipic(560,240,"gfx/normaltall_8.png")
+}
+
+alternative_sprites (spriteset_parking_23_4, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,360,"gfx/parking_23.png")
+	template_tallmultipic(70,360,"gfx/parking_23.png")
+	template_tallmultipic(140,360,"gfx/parking_23.png")
+	template_tallmultipic(210,360,"gfx/parking_23.png")	
+	template_tallmultipic(280,360,"gfx/parking_23.png")
+	template_tallmultipic(350,360,"gfx/parking_23.png")
+	template_tallmultipic(420,360,"gfx/parking_23.png")
+	template_tallmultipic(490,360,"gfx/parking_23.png")
+	template_tallmultipic(560,360,"gfx/parking_23.png")
+}
+
+spriteset (spriteset_parking_23_4_snow) {
+    	template_tallmultipic(0,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(70,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(140,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(210,360,"gfx/normaltall_8_SNOW.png")	
+	template_tallmultipic(280,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(350,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(420,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(490,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(560,360,"gfx/normaltall_8_SNOW.png")
+}
+
+alternative_sprites (spriteset_parking_23_4_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,360,"gfx/parking_23_snow.png")
+	template_tallmultipic(70,360,"gfx/parking_23_snow.png")
+	template_tallmultipic(140,360,"gfx/parking_23_snow.png")
+	template_tallmultipic(210,360,"gfx/parking_23_snow.png")	
+	template_tallmultipic(280,360,"gfx/parking_23_snow.png")
+	template_tallmultipic(350,360,"gfx/parking_23_snow.png")
+	template_tallmultipic(420,360,"gfx/parking_23_snow.png")
+	template_tallmultipic(490,360,"gfx/parking_23_snow.png")
+	template_tallmultipic(560,360,"gfx/parking_23_snow.png")
+}
+
+spriteset (spriteset_parking_23_PURCHASE) {
+    template_tallmultipic_purchase(0,0,"gfx/normaltall_8_PURCHASE.png")
+}
+
+alternative_sprites (spriteset_parking_23_PURCHASE, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    template_tallmultipic_purchase(0,0,"gfx/parking_23_PURCHASE.png")
+}
+
+
+//OBJECT 1 SIMPLE tallmultipic//
+//SPRITELAYOUTS//
+
+//RURAL tallmultipic LOT NE + PURCHASE//
+spritelayout spritelayout_parking_23_1 {
+    ground {
+        sprite: LOAD_TEMP(1);
+	}
+
+	building {
+        sprite: spriteset_parking_23_1((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type == TILETYPE_SNOW);
+    }
+	building {
+        sprite: spriteset_parking_23_1_snow((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type != TILETYPE_SNOW);
+    }
+
+
+}
+
+spritelayout spritelayout_parking_23_1_purchase {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+	}
+
+	building {
+        sprite: spriteset_parking_23_PURCHASE(0);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+    }
+
+}
+
+//RURAL tallmultipic LOT SE + PURCHASE//
+spritelayout spritelayout_parking_23_2 {
+    ground {
+        sprite: LOAD_TEMP(1);
+	}
+
+	building {
+        sprite: spriteset_parking_23_2((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type == TILETYPE_SNOW);
+    }
+	building {
+        sprite: spriteset_parking_23_2_snow((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type != TILETYPE_SNOW);
+    }
+
+}
+spritelayout spritelayout_parking_23_2_purchase {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+	}
+
+	building {
+        sprite: spriteset_parking_23_PURCHASE(1);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+    }
+
+}
+
+//OBJECT 2 SIMPLE tallmultipic//
+//tallmultipic LOT NE + PURCHASE//
+spritelayout spritelayout_parking_23_3 {
+    ground {
+        sprite: LOAD_TEMP(1);
+	}
+
+	building {
+        sprite: spriteset_parking_23_3((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type == TILETYPE_SNOW);
+    }
+	building {
+        sprite: spriteset_parking_23_3_snow((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type != TILETYPE_SNOW);
+    }
+
+}
+spritelayout spritelayout_parking_23_3_purchase {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+	}
+
+	building {
+        sprite: spriteset_parking_23_PURCHASE(2);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+    }
+
+}
+
+//tallmultipic LOT SE + PURCHASE//
+spritelayout spritelayout_parking_23_4 {
+    ground {
+        sprite: LOAD_TEMP(1);
+	}
+
+	building {
+        sprite: spriteset_parking_23_4((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type == TILETYPE_SNOW);
+    }
+	building {
+        sprite: spriteset_parking_23_4_snow((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type != TILETYPE_SNOW);
+    }
+
+}
+spritelayout spritelayout_parking_23_4_purchase {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+	}
+
+	building {
+        sprite: spriteset_parking_23_PURCHASE(3);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+    }
+
+}
+
+//decide spritelayout for each of the 4 views
+switch (FEAT_OBJECTS, SELF, switch_parking_23_view, view) {
+    1:  spritelayout_parking_23_2;
+    2:  spritelayout_parking_23_3;
+    3:  spritelayout_parking_23_4;
+    spritelayout_parking_23_1;
+}
+
+//calculate ground sprite for object
+switch (FEAT_OBJECTS, SELF, switch_parking_23_object, [
+        //tile slope offset in storage register 0
+        STORE_TEMP(0, 0),
+        //terrain type in storage register 1
+        STORE_TEMP(GROUNDSPRITE_NORMAL, 1),
+		STORE_TEMP( (nearby_tile_terrain_type(0,0) == TILETYPE_DESERT) * GROUNDSPRITE_DESERT, 1),
+		STORE_TEMP( LOAD_TEMP(1) + (LOAD_TEMP(1) == 0) * 4512 * (nearby_tile_terrain_type( 1, 0) == TILETYPE_DESERT), 1),
+		STORE_TEMP( LOAD_TEMP(1) + (LOAD_TEMP(1) == 0) * 4512 * (nearby_tile_terrain_type(-1, 0) == TILETYPE_DESERT), 1),
+		STORE_TEMP( LOAD_TEMP(1) + (LOAD_TEMP(1) == 0) * 4512 * (nearby_tile_terrain_type( 0, 1) == TILETYPE_DESERT), 1),
+		STORE_TEMP( LOAD_TEMP(1) + (LOAD_TEMP(1) == 0) * 4512 * (nearby_tile_terrain_type( 0,-1) == TILETYPE_DESERT), 1),
+		STORE_TEMP( LOAD_TEMP(1) + (LOAD_TEMP(1) == 0) * GROUNDSPRITE_NORMAL, 1),
+		STORE_TEMP(terrain_type == TILETYPE_SNOW   ? GROUNDSPRITE_SNOW : LOAD_TEMP(1), 1),
+		STORE_TEMP(snowline_height == 0xFF ? 0xFF : nearby_tile_height(0,0) - snowline_height, 127),
+		STORE_TEMP((LOAD_TEMP(127) == -1) ? GROUNDSPRITE_SNOW_1_4 : LOAD_TEMP(1), 1),
+		STORE_TEMP((LOAD_TEMP(127) ==  0) ? GROUNDSPRITE_SNOW_2_4 : LOAD_TEMP(1), 1),
+		STORE_TEMP((LOAD_TEMP(127) ==  1) ? GROUNDSPRITE_SNOW_3_4 : LOAD_TEMP(1), 1)
+        ]) {
+    switch_parking_23_view;
+}
+
+//decide spritelayout for the purchase menu
+switch (FEAT_OBJECTS, SELF, switch_parking_23_purchase, view) {
+    1:  spritelayout_parking_23_2_purchase;
+    2:  spritelayout_parking_23_3_purchase;
+    3:  spritelayout_parking_23_4_purchase;
+    spritelayout_parking_23_1_purchase;
+}
+
+switch (FEAT_OBJECTS, SELF, switch_add_text_STR_parking_23, view) {
+1: string(STR_parking_23_purchase_view2);
+2: string(STR_parking_23_purchase_view3);
+3: string(STR_parking_23_purchase_view4);
+default: string(STR_parking_23_purchase_view1);
+}
+
+item (FEAT_OBJECTS, item_parking_23, 422) {
+    property {
+        class:                  "PALO";
+	classname:		string(STR_PALO);
+        name:                   string(STR_parking_23);
+        climates_available:     ALL_CLIMATES;
+        size:                   [1,1];
+        build_cost_multiplier:  0;
+        remove_cost_multiplier: 0;
+        introduction_date:      date(1111,1,1);
+        end_of_life_date:       0xFFFFFFFF;
+        object_flags:           bitmask(OBJ_FLAG_ANYTHING_REMOVE);
+//	animation_info:			[ANIMATION_LOOPING, 9];
+//	animation_speed:		7;
+//	animation_triggers:		3;
+        height:                 1;
+        num_views:              4;
+    }
+    graphics {
+        default:            switch_parking_23_object;
+        purchase:           switch_parking_23_purchase;
+        autoslope:          return(CB_RESULT_AUTOSLOPE);
+//      additional_text:    string(STR_tallmultipic_1_PURCHASE);
+        additional_text:    switch_add_text_STR_parking_23;
+	anim_control:    	return CB_RESULT_NEXT_FRAME;
+	anim_next_frame: 	return CB_RESULT_NEXT_FRAME;
+    }
+}
+///pa24///
+spriteset (spriteset_parking_24_1) {
+    	template_tallmultipic(0,0,"gfx/normaltall_8.png")
+	template_tallmultipic(70,0,"gfx/normaltall_8.png")
+	template_tallmultipic(140,0,"gfx/normaltall_8.png")
+	template_tallmultipic(210,0,"gfx/normaltall_8.png")
+	template_tallmultipic(280,0,"gfx/normaltall_8.png")
+	template_tallmultipic(350,0,"gfx/normaltall_8.png")
+	template_tallmultipic(420,0,"gfx/normaltall_8.png")
+	template_tallmultipic(490,0,"gfx/normaltall_8.png")
+	template_tallmultipic(560,0,"gfx/normaltall_8.png")
+}
+
+alternative_sprites (spriteset_parking_24_1, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+
+    	template_tallmultipic(0,0,"gfx/parking_24.png")
+	template_tallmultipic(70,0,"gfx/parking_24.png")
+	template_tallmultipic(140,0,"gfx/parking_24.png")
+	template_tallmultipic(210,0,"gfx/parking_24.png")
+	template_tallmultipic(280,0,"gfx/parking_24.png")
+	template_tallmultipic(350,0,"gfx/parking_24.png")
+	template_tallmultipic(420,0,"gfx/parking_24.png")
+	template_tallmultipic(490,0,"gfx/parking_24.png")
+	template_tallmultipic(560,0,"gfx/parking_24.png")
+}
+
+spriteset (spriteset_parking_24_1_snow) {
+    	template_tallmultipic(0,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(70,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(140,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(210,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(280,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(350,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(420,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(490,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(560,0,"gfx/normaltall_8_SNOW.png")
+}
+
+alternative_sprites (spriteset_parking_24_1_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,0,"gfx/parking_24_snow.png")
+	template_tallmultipic(70,0,"gfx/parking_24_snow.png")
+	template_tallmultipic(140,0,"gfx/parking_24_snow.png")
+	template_tallmultipic(210,0,"gfx/parking_24_snow.png")
+	template_tallmultipic(280,0,"gfx/parking_24_snow.png")
+	template_tallmultipic(350,0,"gfx/parking_24_snow.png")
+	template_tallmultipic(420,0,"gfx/parking_24_snow.png")
+	template_tallmultipic(490,0,"gfx/parking_24_snow.png")
+	template_tallmultipic(560,0,"gfx/parking_24_snow.png")
+}
+
+//2ND ROW NE + SNOW//
+spriteset (spriteset_parking_24_2) {
+    	template_tallmultipic(0,120,"gfx/normaltall_8.png")
+	template_tallmultipic(70,120,"gfx/normaltall_8.png")
+	template_tallmultipic(140,120,"gfx/normaltall_8.png")
+	template_tallmultipic(210,120,"gfx/normaltall_8.png")
+	template_tallmultipic(280,120,"gfx/normaltall_8.png")
+	template_tallmultipic(350,120,"gfx/normaltall_8.png")
+	template_tallmultipic(420,120,"gfx/normaltall_8.png")
+	template_tallmultipic(490,120,"gfx/normaltall_8.png")
+	template_tallmultipic(560,120,"gfx/normaltall_8.png")
+}
+
+alternative_sprites (spriteset_parking_24_2, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,120,"gfx/parking_24.png")
+	template_tallmultipic(70,120,"gfx/parking_24.png")
+	template_tallmultipic(140,120,"gfx/parking_24.png")
+	template_tallmultipic(210,120,"gfx/parking_24.png")
+	template_tallmultipic(280,120,"gfx/parking_24.png")
+	template_tallmultipic(350,120,"gfx/parking_24.png")
+	template_tallmultipic(420,120,"gfx/parking_24.png")
+	template_tallmultipic(490,120,"gfx/parking_24.png")
+	template_tallmultipic(560,120,"gfx/parking_24.png")
+}
+
+spriteset (spriteset_parking_24_2_snow) {
+    	template_tallmultipic(0,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(70,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(140,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(210,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(280,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(350,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(420,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(490,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(560,120,"gfx/normaltall_8_SNOW.png")
+}
+
+alternative_sprites (spriteset_parking_24_2_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,120,"gfx/parking_24_snow.png")
+	template_tallmultipic(70,120,"gfx/parking_24_snow.png")
+	template_tallmultipic(140,120,"gfx/parking_24_snow.png")
+	template_tallmultipic(210,120,"gfx/parking_24_snow.png")
+	template_tallmultipic(280,120,"gfx/parking_24_snow.png")
+	template_tallmultipic(350,120,"gfx/parking_24_snow.png")
+	template_tallmultipic(420,120,"gfx/parking_24_snow.png")
+	template_tallmultipic(490,120,"gfx/parking_24_snow.png")
+	template_tallmultipic(560,120,"gfx/parking_24_snow.png")
+}
+
+
+//3RD ROW SE + SNOW//
+spriteset (spriteset_parking_24_3) {
+    	template_tallmultipic(0,240,"gfx/normaltall_8.png")
+	template_tallmultipic(70,240,"gfx/normaltall_8.png")
+	template_tallmultipic(140,240,"gfx/normaltall_8.png")
+	template_tallmultipic(210,240,"gfx/normaltall_8.png")
+	template_tallmultipic(280,240,"gfx/normaltall_8.png")
+	template_tallmultipic(350,240,"gfx/normaltall_8.png")
+	template_tallmultipic(420,240,"gfx/normaltall_8.png")
+	template_tallmultipic(490,240,"gfx/normaltall_8.png")
+	template_tallmultipic(560,240,"gfx/normaltall_8.png")
+}
+
+alternative_sprites (spriteset_parking_24_3, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,240,"gfx/parking_24.png")
+	template_tallmultipic(70,240,"gfx/parking_24.png")
+	template_tallmultipic(140,240,"gfx/parking_24.png")
+	template_tallmultipic(210,240,"gfx/parking_24.png")
+	template_tallmultipic(280,240,"gfx/parking_24.png")
+	template_tallmultipic(350,240,"gfx/parking_24.png")
+	template_tallmultipic(420,240,"gfx/parking_24.png")
+	template_tallmultipic(490,240,"gfx/parking_24.png")
+	template_tallmultipic(560,240,"gfx/parking_24.png")
+}
+
+
+spriteset (spriteset_parking_24_3_snow) {
+    	template_tallmultipic(0,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(70,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(140,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(210,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(280,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(350,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(420,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(490,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(560,240,"gfx/normaltall_8_SNOW.png")
+}
+
+
+alternative_sprites (spriteset_parking_24_3_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,240,"gfx/parking_24_snow.png")
+	template_tallmultipic(70,240,"gfx/parking_24_snow.png")
+	template_tallmultipic(140,240,"gfx/parking_24_snow.png")
+	template_tallmultipic(210,240,"gfx/parking_24_snow.png")
+	template_tallmultipic(280,240,"gfx/parking_24_snow.png")
+	template_tallmultipic(350,240,"gfx/parking_24_snow.png")
+	template_tallmultipic(420,240,"gfx/parking_24_snow.png")
+	template_tallmultipic(490,240,"gfx/parking_24_snow.png")
+	template_tallmultipic(560,240,"gfx/parking_24_snow.png")
+}
+
+
+//4TH ROW + SNOW//
+spriteset (spriteset_parking_24_4) {
+    	template_tallmultipic(0,240,"gfx/normaltall_8.png")
+	template_tallmultipic(70,240,"gfx/normaltall_8.png")
+	template_tallmultipic(140,240,"gfx/normaltall_8.png")
+	template_tallmultipic(210,240,"gfx/normaltall_8.png")	
+	template_tallmultipic(280,240,"gfx/normaltall_8.png")
+	template_tallmultipic(350,240,"gfx/normaltall_8.png")
+	template_tallmultipic(420,240,"gfx/normaltall_8.png")
+	template_tallmultipic(490,240,"gfx/normaltall_8.png")
+	template_tallmultipic(560,240,"gfx/normaltall_8.png")
+}
+
+alternative_sprites (spriteset_parking_24_4, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,360,"gfx/parking_24.png")
+	template_tallmultipic(70,360,"gfx/parking_24.png")
+	template_tallmultipic(140,360,"gfx/parking_24.png")
+	template_tallmultipic(210,360,"gfx/parking_24.png")	
+	template_tallmultipic(280,360,"gfx/parking_24.png")
+	template_tallmultipic(350,360,"gfx/parking_24.png")
+	template_tallmultipic(420,360,"gfx/parking_24.png")
+	template_tallmultipic(490,360,"gfx/parking_24.png")
+	template_tallmultipic(560,360,"gfx/parking_24.png")
+}
+
+spriteset (spriteset_parking_24_4_snow) {
+    	template_tallmultipic(0,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(70,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(140,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(210,360,"gfx/normaltall_8_SNOW.png")	
+	template_tallmultipic(280,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(350,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(420,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(490,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(560,360,"gfx/normaltall_8_SNOW.png")
+}
+
+alternative_sprites (spriteset_parking_24_4_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,360,"gfx/parking_24_snow.png")
+	template_tallmultipic(70,360,"gfx/parking_24_snow.png")
+	template_tallmultipic(140,360,"gfx/parking_24_snow.png")
+	template_tallmultipic(210,360,"gfx/parking_24_snow.png")	
+	template_tallmultipic(280,360,"gfx/parking_24_snow.png")
+	template_tallmultipic(350,360,"gfx/parking_24_snow.png")
+	template_tallmultipic(420,360,"gfx/parking_24_snow.png")
+	template_tallmultipic(490,360,"gfx/parking_24_snow.png")
+	template_tallmultipic(560,360,"gfx/parking_24_snow.png")
+}
+
+spriteset (spriteset_parking_24_PURCHASE) {
+    template_tallmultipic_purchase(0,0,"gfx/normaltall_8_PURCHASE.png")
+}
+
+alternative_sprites (spriteset_parking_24_PURCHASE, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    template_tallmultipic_purchase(0,0,"gfx/parking_24_PURCHASE.png")
+}
+
+
+//OBJECT 1 SIMPLE tallmultipic//
+//SPRITELAYOUTS//
+
+//RURAL tallmultipic LOT NE + PURCHASE//
+spritelayout spritelayout_parking_24_1 {
+    ground {
+        sprite: LOAD_TEMP(1);
+	}
+
+	building {
+        sprite: spriteset_parking_24_1((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type == TILETYPE_SNOW);
+    }
+	building {
+        sprite: spriteset_parking_24_1_snow((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type != TILETYPE_SNOW);
+    }
+
+
+}
+
+spritelayout spritelayout_parking_24_1_purchase {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+	}
+
+	building {
+        sprite: spriteset_parking_24_PURCHASE(0);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+    }
+
+}
+
+//RURAL tallmultipic LOT SE + PURCHASE//
+spritelayout spritelayout_parking_24_2 {
+    ground {
+        sprite: LOAD_TEMP(1);
+	}
+
+	building {
+        sprite: spriteset_parking_24_2((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type == TILETYPE_SNOW);
+    }
+	building {
+        sprite: spriteset_parking_24_2_snow((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type != TILETYPE_SNOW);
+    }
+
+}
+spritelayout spritelayout_parking_24_2_purchase {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+	}
+
+	building {
+        sprite: spriteset_parking_24_PURCHASE(1);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+    }
+
+}
+
+//OBJECT 2 SIMPLE tallmultipic//
+//tallmultipic LOT NE + PURCHASE//
+spritelayout spritelayout_parking_24_3 {
+    ground {
+        sprite: LOAD_TEMP(1);
+	}
+
+	building {
+        sprite: spriteset_parking_24_3((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type == TILETYPE_SNOW);
+    }
+	building {
+        sprite: spriteset_parking_24_3_snow((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type != TILETYPE_SNOW);
+    }
+
+}
+spritelayout spritelayout_parking_24_3_purchase {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+	}
+
+	building {
+        sprite: spriteset_parking_24_PURCHASE(2);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+    }
+
+}
+
+//tallmultipic LOT SE + PURCHASE//
+spritelayout spritelayout_parking_24_4 {
+    ground {
+        sprite: LOAD_TEMP(1);
+	}
+
+	building {
+        sprite: spriteset_parking_24_4((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type == TILETYPE_SNOW);
+    }
+	building {
+        sprite: spriteset_parking_24_4_snow((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type != TILETYPE_SNOW);
+    }
+
+}
+spritelayout spritelayout_parking_24_4_purchase {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+	}
+
+	building {
+        sprite: spriteset_parking_24_PURCHASE(3);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+    }
+
+}
+
+//decide spritelayout for each of the 4 views
+switch (FEAT_OBJECTS, SELF, switch_parking_24_view, view) {
+    1:  spritelayout_parking_24_2;
+    2:  spritelayout_parking_24_3;
+    3:  spritelayout_parking_24_4;
+    spritelayout_parking_24_1;
+}
+
+//calculate ground sprite for object
+switch (FEAT_OBJECTS, SELF, switch_parking_24_object, [
+        //tile slope offset in storage register 0
+        STORE_TEMP(0, 0),
+        //terrain type in storage register 1
+        STORE_TEMP(GROUNDSPRITE_NORMAL, 1),
+		STORE_TEMP( (nearby_tile_terrain_type(0,0) == TILETYPE_DESERT) * GROUNDSPRITE_DESERT, 1),
+		STORE_TEMP( LOAD_TEMP(1) + (LOAD_TEMP(1) == 0) * 4512 * (nearby_tile_terrain_type( 1, 0) == TILETYPE_DESERT), 1),
+		STORE_TEMP( LOAD_TEMP(1) + (LOAD_TEMP(1) == 0) * 4512 * (nearby_tile_terrain_type(-1, 0) == TILETYPE_DESERT), 1),
+		STORE_TEMP( LOAD_TEMP(1) + (LOAD_TEMP(1) == 0) * 4512 * (nearby_tile_terrain_type( 0, 1) == TILETYPE_DESERT), 1),
+		STORE_TEMP( LOAD_TEMP(1) + (LOAD_TEMP(1) == 0) * 4512 * (nearby_tile_terrain_type( 0,-1) == TILETYPE_DESERT), 1),
+		STORE_TEMP( LOAD_TEMP(1) + (LOAD_TEMP(1) == 0) * GROUNDSPRITE_NORMAL, 1),
+		STORE_TEMP(terrain_type == TILETYPE_SNOW   ? GROUNDSPRITE_SNOW : LOAD_TEMP(1), 1),
+		STORE_TEMP(snowline_height == 0xFF ? 0xFF : nearby_tile_height(0,0) - snowline_height, 127),
+		STORE_TEMP((LOAD_TEMP(127) == -1) ? GROUNDSPRITE_SNOW_1_4 : LOAD_TEMP(1), 1),
+		STORE_TEMP((LOAD_TEMP(127) ==  0) ? GROUNDSPRITE_SNOW_2_4 : LOAD_TEMP(1), 1),
+		STORE_TEMP((LOAD_TEMP(127) ==  1) ? GROUNDSPRITE_SNOW_3_4 : LOAD_TEMP(1), 1)
+        ]) {
+    switch_parking_24_view;
+}
+
+//decide spritelayout for the purchase menu
+switch (FEAT_OBJECTS, SELF, switch_parking_24_purchase, view) {
+    1:  spritelayout_parking_24_2_purchase;
+    2:  spritelayout_parking_24_3_purchase;
+    3:  spritelayout_parking_24_4_purchase;
+    spritelayout_parking_24_1_purchase;
+}
+
+switch (FEAT_OBJECTS, SELF, switch_add_text_STR_parking_24, view) {
+1: string(STR_parking_24_purchase_view2);
+2: string(STR_parking_24_purchase_view3);
+3: string(STR_parking_24_purchase_view4);
+default: string(STR_parking_24_purchase_view1);
+}
+
+item (FEAT_OBJECTS, item_parking_24, 423) {
+    property {
+        class:                  "PALO";
+	classname:		string(STR_PALO);
+        name:                   string(STR_parking_24);
+        climates_available:     ALL_CLIMATES;
+        size:                   [1,1];
+        build_cost_multiplier:  0;
+        remove_cost_multiplier: 0;
+        introduction_date:      date(1111,1,1);
+        end_of_life_date:       0xFFFFFFFF;
+        object_flags:           bitmask(OBJ_FLAG_ANYTHING_REMOVE);
+//	animation_info:			[ANIMATION_LOOPING, 9];
+//	animation_speed:		7;
+//	animation_triggers:		3;
+        height:                 1;
+        num_views:              4;
+    }
+    graphics {
+        default:            switch_parking_24_object;
+        purchase:           switch_parking_24_purchase;
+        autoslope:          return(CB_RESULT_AUTOSLOPE);
+//      additional_text:    string(STR_tallmultipic_1_PURCHASE);
+        additional_text:    switch_add_text_STR_parking_24;
+	anim_control:    	return CB_RESULT_NEXT_FRAME;
+	anim_next_frame: 	return CB_RESULT_NEXT_FRAME;
+    }
+}
+/////pa25////
+spriteset (spriteset_parking_25_1) {
+    	template_tallmultipic(0,0,"gfx/normaltall_8.png")
+	template_tallmultipic(70,0,"gfx/normaltall_8.png")
+	template_tallmultipic(140,0,"gfx/normaltall_8.png")
+	template_tallmultipic(210,0,"gfx/normaltall_8.png")
+	template_tallmultipic(280,0,"gfx/normaltall_8.png")
+	template_tallmultipic(350,0,"gfx/normaltall_8.png")
+	template_tallmultipic(420,0,"gfx/normaltall_8.png")
+	template_tallmultipic(490,0,"gfx/normaltall_8.png")
+	template_tallmultipic(560,0,"gfx/normaltall_8.png")
+}
+
+alternative_sprites (spriteset_parking_25_1, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+
+    	template_tallmultipic(0,0,"gfx/parking_25.png")
+	template_tallmultipic(70,0,"gfx/parking_25.png")
+	template_tallmultipic(140,0,"gfx/parking_25.png")
+	template_tallmultipic(210,0,"gfx/parking_25.png")
+	template_tallmultipic(280,0,"gfx/parking_25.png")
+	template_tallmultipic(350,0,"gfx/parking_25.png")
+	template_tallmultipic(420,0,"gfx/parking_25.png")
+	template_tallmultipic(490,0,"gfx/parking_25.png")
+	template_tallmultipic(560,0,"gfx/parking_25.png")
+}
+
+spriteset (spriteset_parking_25_1_snow) {
+    	template_tallmultipic(0,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(70,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(140,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(210,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(280,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(350,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(420,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(490,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(560,0,"gfx/normaltall_8_SNOW.png")
+}
+
+alternative_sprites (spriteset_parking_25_1_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,0,"gfx/parking_25_snow.png")
+	template_tallmultipic(70,0,"gfx/parking_25_snow.png")
+	template_tallmultipic(140,0,"gfx/parking_25_snow.png")
+	template_tallmultipic(210,0,"gfx/parking_25_snow.png")
+	template_tallmultipic(280,0,"gfx/parking_25_snow.png")
+	template_tallmultipic(350,0,"gfx/parking_25_snow.png")
+	template_tallmultipic(420,0,"gfx/parking_25_snow.png")
+	template_tallmultipic(490,0,"gfx/parking_25_snow.png")
+	template_tallmultipic(560,0,"gfx/parking_25_snow.png")
+}
+
+//2ND ROW NE + SNOW//
+spriteset (spriteset_parking_25_2) {
+    	template_tallmultipic(0,120,"gfx/normaltall_8.png")
+	template_tallmultipic(70,120,"gfx/normaltall_8.png")
+	template_tallmultipic(140,120,"gfx/normaltall_8.png")
+	template_tallmultipic(210,120,"gfx/normaltall_8.png")
+	template_tallmultipic(280,120,"gfx/normaltall_8.png")
+	template_tallmultipic(350,120,"gfx/normaltall_8.png")
+	template_tallmultipic(420,120,"gfx/normaltall_8.png")
+	template_tallmultipic(490,120,"gfx/normaltall_8.png")
+	template_tallmultipic(560,120,"gfx/normaltall_8.png")
+}
+
+alternative_sprites (spriteset_parking_25_2, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,120,"gfx/parking_25.png")
+	template_tallmultipic(70,120,"gfx/parking_25.png")
+	template_tallmultipic(140,120,"gfx/parking_25.png")
+	template_tallmultipic(210,120,"gfx/parking_25.png")
+	template_tallmultipic(280,120,"gfx/parking_25.png")
+	template_tallmultipic(350,120,"gfx/parking_25.png")
+	template_tallmultipic(420,120,"gfx/parking_25.png")
+	template_tallmultipic(490,120,"gfx/parking_25.png")
+	template_tallmultipic(560,120,"gfx/parking_25.png")
+}
+
+spriteset (spriteset_parking_25_2_snow) {
+    	template_tallmultipic(0,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(70,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(140,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(210,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(280,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(350,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(420,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(490,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(560,120,"gfx/normaltall_8_SNOW.png")
+}
+
+alternative_sprites (spriteset_parking_25_2_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,120,"gfx/parking_25_snow.png")
+	template_tallmultipic(70,120,"gfx/parking_25_snow.png")
+	template_tallmultipic(140,120,"gfx/parking_25_snow.png")
+	template_tallmultipic(210,120,"gfx/parking_25_snow.png")
+	template_tallmultipic(280,120,"gfx/parking_25_snow.png")
+	template_tallmultipic(350,120,"gfx/parking_25_snow.png")
+	template_tallmultipic(420,120,"gfx/parking_25_snow.png")
+	template_tallmultipic(490,120,"gfx/parking_25_snow.png")
+	template_tallmultipic(560,120,"gfx/parking_25_snow.png")
+}
+
+
+//3RD ROW SE + SNOW//
+spriteset (spriteset_parking_25_3) {
+    	template_tallmultipic(0,240,"gfx/normaltall_8.png")
+	template_tallmultipic(70,240,"gfx/normaltall_8.png")
+	template_tallmultipic(140,240,"gfx/normaltall_8.png")
+	template_tallmultipic(210,240,"gfx/normaltall_8.png")
+	template_tallmultipic(280,240,"gfx/normaltall_8.png")
+	template_tallmultipic(350,240,"gfx/normaltall_8.png")
+	template_tallmultipic(420,240,"gfx/normaltall_8.png")
+	template_tallmultipic(490,240,"gfx/normaltall_8.png")
+	template_tallmultipic(560,240,"gfx/normaltall_8.png")
+}
+
+alternative_sprites (spriteset_parking_25_3, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,240,"gfx/parking_25.png")
+	template_tallmultipic(70,240,"gfx/parking_25.png")
+	template_tallmultipic(140,240,"gfx/parking_25.png")
+	template_tallmultipic(210,240,"gfx/parking_25.png")
+	template_tallmultipic(280,240,"gfx/parking_25.png")
+	template_tallmultipic(350,240,"gfx/parking_25.png")
+	template_tallmultipic(420,240,"gfx/parking_25.png")
+	template_tallmultipic(490,240,"gfx/parking_25.png")
+	template_tallmultipic(560,240,"gfx/parking_25.png")
+}
+
+
+spriteset (spriteset_parking_25_3_snow) {
+    	template_tallmultipic(0,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(70,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(140,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(210,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(280,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(350,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(420,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(490,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(560,240,"gfx/normaltall_8_SNOW.png")
+}
+
+
+alternative_sprites (spriteset_parking_25_3_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,240,"gfx/parking_25_snow.png")
+	template_tallmultipic(70,240,"gfx/parking_25_snow.png")
+	template_tallmultipic(140,240,"gfx/parking_25_snow.png")
+	template_tallmultipic(210,240,"gfx/parking_25_snow.png")
+	template_tallmultipic(280,240,"gfx/parking_25_snow.png")
+	template_tallmultipic(350,240,"gfx/parking_25_snow.png")
+	template_tallmultipic(420,240,"gfx/parking_25_snow.png")
+	template_tallmultipic(490,240,"gfx/parking_25_snow.png")
+	template_tallmultipic(560,240,"gfx/parking_25_snow.png")
+}
+
+
+//4TH ROW + SNOW//
+spriteset (spriteset_parking_25_4) {
+    	template_tallmultipic(0,240,"gfx/normaltall_8.png")
+	template_tallmultipic(70,240,"gfx/normaltall_8.png")
+	template_tallmultipic(140,240,"gfx/normaltall_8.png")
+	template_tallmultipic(210,240,"gfx/normaltall_8.png")	
+	template_tallmultipic(280,240,"gfx/normaltall_8.png")
+	template_tallmultipic(350,240,"gfx/normaltall_8.png")
+	template_tallmultipic(420,240,"gfx/normaltall_8.png")
+	template_tallmultipic(490,240,"gfx/normaltall_8.png")
+	template_tallmultipic(560,240,"gfx/normaltall_8.png")
+}
+
+alternative_sprites (spriteset_parking_25_4, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,360,"gfx/parking_25.png")
+	template_tallmultipic(70,360,"gfx/parking_25.png")
+	template_tallmultipic(140,360,"gfx/parking_25.png")
+	template_tallmultipic(210,360,"gfx/parking_25.png")	
+	template_tallmultipic(280,360,"gfx/parking_25.png")
+	template_tallmultipic(350,360,"gfx/parking_25.png")
+	template_tallmultipic(420,360,"gfx/parking_25.png")
+	template_tallmultipic(490,360,"gfx/parking_25.png")
+	template_tallmultipic(560,360,"gfx/parking_25.png")
+}
+
+spriteset (spriteset_parking_25_4_snow) {
+    	template_tallmultipic(0,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(70,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(140,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(210,360,"gfx/normaltall_8_SNOW.png")	
+	template_tallmultipic(280,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(350,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(420,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(490,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(560,360,"gfx/normaltall_8_SNOW.png")
+}
+
+alternative_sprites (spriteset_parking_25_4_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,360,"gfx/parking_25_snow.png")
+	template_tallmultipic(70,360,"gfx/parking_25_snow.png")
+	template_tallmultipic(140,360,"gfx/parking_25_snow.png")
+	template_tallmultipic(210,360,"gfx/parking_25_snow.png")	
+	template_tallmultipic(280,360,"gfx/parking_25_snow.png")
+	template_tallmultipic(350,360,"gfx/parking_25_snow.png")
+	template_tallmultipic(420,360,"gfx/parking_25_snow.png")
+	template_tallmultipic(490,360,"gfx/parking_25_snow.png")
+	template_tallmultipic(560,360,"gfx/parking_25_snow.png")
+}
+
+spriteset (spriteset_parking_25_PURCHASE) {
+    template_tallmultipic_purchase(0,0,"gfx/normaltall_8_PURCHASE.png")
+}
+
+alternative_sprites (spriteset_parking_25_PURCHASE, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    template_tallmultipic_purchase(0,0,"gfx/parking_25_PURCHASE.png")
+}
+
+
+//OBJECT 1 SIMPLE tallmultipic//
+//SPRITELAYOUTS//
+
+//RURAL tallmultipic LOT NE + PURCHASE//
+spritelayout spritelayout_parking_25_1 {
+    ground {
+        sprite: LOAD_TEMP(1);
+	}
+
+	building {
+        sprite: spriteset_parking_25_1((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type == TILETYPE_SNOW);
+    }
+	building {
+        sprite: spriteset_parking_25_1_snow((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type != TILETYPE_SNOW);
+    }
+
+
+}
+
+spritelayout spritelayout_parking_25_1_purchase {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+	}
+
+	building {
+        sprite: spriteset_parking_25_PURCHASE(0);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+    }
+
+}
+
+//RURAL tallmultipic LOT SE + PURCHASE//
+spritelayout spritelayout_parking_25_2 {
+    ground {
+        sprite: LOAD_TEMP(1);
+	}
+
+	building {
+        sprite: spriteset_parking_25_2((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type == TILETYPE_SNOW);
+    }
+	building {
+        sprite: spriteset_parking_25_2_snow((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type != TILETYPE_SNOW);
+    }
+
+}
+spritelayout spritelayout_parking_25_2_purchase {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+	}
+
+	building {
+        sprite: spriteset_parking_25_PURCHASE(1);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+    }
+
+}
+
+//OBJECT 2 SIMPLE tallmultipic//
+//tallmultipic LOT NE + PURCHASE//
+spritelayout spritelayout_parking_25_3 {
+    ground {
+        sprite: LOAD_TEMP(1);
+	}
+
+	building {
+        sprite: spriteset_parking_25_3((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type == TILETYPE_SNOW);
+    }
+	building {
+        sprite: spriteset_parking_25_3_snow((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type != TILETYPE_SNOW);
+    }
+
+}
+spritelayout spritelayout_parking_25_3_purchase {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+	}
+
+	building {
+        sprite: spriteset_parking_25_PURCHASE(2);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+    }
+
+}
+
+//tallmultipic LOT SE + PURCHASE//
+spritelayout spritelayout_parking_25_4 {
+    ground {
+        sprite: LOAD_TEMP(1);
+	}
+
+	building {
+        sprite: spriteset_parking_25_4((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type == TILETYPE_SNOW);
+    }
+	building {
+        sprite: spriteset_parking_25_4_snow((animation_frame + nearby_tile_random_bits(0,0)) % 5);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type != TILETYPE_SNOW);
+    }
+
+}
+spritelayout spritelayout_parking_25_4_purchase {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+	}
+
+	building {
+        sprite: spriteset_parking_25_PURCHASE(3);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+    }
+
+}
+
+//decide spritelayout for each of the 4 views
+switch (FEAT_OBJECTS, SELF, switch_parking_25_view, view) {
+    1:  spritelayout_parking_25_2;
+    2:  spritelayout_parking_25_3;
+    3:  spritelayout_parking_25_4;
+    spritelayout_parking_25_1;
+}
+
+//calculate ground sprite for object
+switch (FEAT_OBJECTS, SELF, switch_parking_25_object, [
+        //tile slope offset in storage register 0
+        STORE_TEMP(0, 0),
+        //terrain type in storage register 1
+        STORE_TEMP(GROUNDSPRITE_NORMAL, 1),
+		STORE_TEMP( (nearby_tile_terrain_type(0,0) == TILETYPE_DESERT) * GROUNDSPRITE_DESERT, 1),
+		STORE_TEMP( LOAD_TEMP(1) + (LOAD_TEMP(1) == 0) * 4512 * (nearby_tile_terrain_type( 1, 0) == TILETYPE_DESERT), 1),
+		STORE_TEMP( LOAD_TEMP(1) + (LOAD_TEMP(1) == 0) * 4512 * (nearby_tile_terrain_type(-1, 0) == TILETYPE_DESERT), 1),
+		STORE_TEMP( LOAD_TEMP(1) + (LOAD_TEMP(1) == 0) * 4512 * (nearby_tile_terrain_type( 0, 1) == TILETYPE_DESERT), 1),
+		STORE_TEMP( LOAD_TEMP(1) + (LOAD_TEMP(1) == 0) * 4512 * (nearby_tile_terrain_type( 0,-1) == TILETYPE_DESERT), 1),
+		STORE_TEMP( LOAD_TEMP(1) + (LOAD_TEMP(1) == 0) * GROUNDSPRITE_NORMAL, 1),
+		STORE_TEMP(terrain_type == TILETYPE_SNOW   ? GROUNDSPRITE_SNOW : LOAD_TEMP(1), 1),
+		STORE_TEMP(snowline_height == 0xFF ? 0xFF : nearby_tile_height(0,0) - snowline_height, 127),
+		STORE_TEMP((LOAD_TEMP(127) == -1) ? GROUNDSPRITE_SNOW_1_4 : LOAD_TEMP(1), 1),
+		STORE_TEMP((LOAD_TEMP(127) ==  0) ? GROUNDSPRITE_SNOW_2_4 : LOAD_TEMP(1), 1),
+		STORE_TEMP((LOAD_TEMP(127) ==  1) ? GROUNDSPRITE_SNOW_3_4 : LOAD_TEMP(1), 1)
+        ]) {
+    switch_parking_25_view;
+}
+
+//decide spritelayout for the purchase menu
+switch (FEAT_OBJECTS, SELF, switch_parking_25_purchase, view) {
+    1:  spritelayout_parking_25_2_purchase;
+    2:  spritelayout_parking_25_3_purchase;
+    3:  spritelayout_parking_25_4_purchase;
+    spritelayout_parking_25_1_purchase;
+}
+
+switch (FEAT_OBJECTS, SELF, switch_add_text_STR_parking_25, view) {
+1: string(STR_parking_25_purchase_view2);
+2: string(STR_parking_25_purchase_view3);
+3: string(STR_parking_25_purchase_view4);
+default: string(STR_parking_25_purchase_view1);
+}
+
+item (FEAT_OBJECTS, item_parking_25, 424) {
+    property {
+        class:                  "PALO";
+	classname:		string(STR_PALO);
+        name:                   string(STR_parking_25);
+        climates_available:     ALL_CLIMATES;
+        size:                   [1,1];
+        build_cost_multiplier:  0;
+        remove_cost_multiplier: 0;
+        introduction_date:      date(1111,1,1);
+        end_of_life_date:       0xFFFFFFFF;
+        object_flags:           bitmask(OBJ_FLAG_ANYTHING_REMOVE);
+//	animation_info:			[ANIMATION_LOOPING, 9];
+//	animation_speed:		7;
+//	animation_triggers:		3;
+        height:                 1;
+        num_views:              4;
+    }
+    graphics {
+        default:            switch_parking_25_object;
+        purchase:           switch_parking_25_purchase;
+        autoslope:          return(CB_RESULT_AUTOSLOPE);
+//      additional_text:    string(STR_tallmultipic_1_PURCHASE);
+        additional_text:    switch_add_text_STR_parking_25;
 	anim_control:    	return CB_RESULT_NEXT_FRAME;
 	anim_next_frame: 	return CB_RESULT_NEXT_FRAME;
     }
