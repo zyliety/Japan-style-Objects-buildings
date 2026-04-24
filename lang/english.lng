@@ -1,7 +1,7 @@
 ##grflangid 0x01
 
 #Main grf title and description
-STR_GRF_NAME        :JP Style Objects Buildings V3.91
+STR_GRF_NAME        :JP Style Objects Buildings V3.92
 STR_GRF_DESCRIPTION :{YELLOW}JP Style Objects ,2026/4/16. {}{YELLOW}Introduce various buildings, inspired by the lovely scenery of Japan.{}{WHITE}Draw by: Zyliety, GarryG, Mrsunman, Lorenzolu. {}Code by:Zyliety.{}License:GPLv2 or higher
 STR_GRF_URL         :https://github.com/zyliety/Japan-style-Objects-buildings
 
@@ -317,6 +317,12 @@ STR_OFFB_2      :Office Building 2
 STR_OFFB_3      :Office Building 3
 STR_OFFB_4      :Office Building 4
 STR_OFFB_5      :NTT Office Building/Radio Tower
+
+STR_office_building_6      :{YELLOW}Sky Tower 41 is a 41-story skyscraper in Kaminoyama, Yamagata Prefecture, Japan. {}{YELLOW}The tallest building in Yamagata Prefecture, Sky Tower 41 is known for standing out against its rural surroundings, including rice fields adjacent to it.
+STR_office_building_6_purchase_view1		:Sky Tower 41
+STR_office_building_6_purchase_view2		:Sky Tower 41
+STR_office_building_6_purchase_view3		:Sky Tower 41
+STR_office_building_6_purchase_view4		:Sky Tower 41
 
 
 STR_DACH_1      :Danchi
