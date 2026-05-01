@@ -1,7 +1,7 @@
 ##grflangid 0x01
 
 #Main grf title and description
-STR_GRF_NAME        :JP Style Objects Buildings V3.92
+STR_GRF_NAME        :JP Style Objects Buildings V3.93
 STR_GRF_DESCRIPTION :{YELLOW}JP Style Objects ,2026/4/16. {}{YELLOW}Introduce various buildings, inspired by the lovely scenery of Japan.{}{WHITE}Draw by: Zyliety, GarryG, Mrsunman, Lorenzolu. {}Code by:Zyliety.{}License:GPLv2 or higher
 STR_GRF_URL         :https://github.com/zyliety/Japan-style-Objects-buildings
 
@@ -384,6 +384,8 @@ STR_public_building_11_purchase_view1		:Post Office(L)2x2
 STR_public_building_11_purchase_view2		:Post Office(L)2x2
 STR_public_building_11_purchase_view3		:Post Office(L)2x2
 STR_public_building_11_purchase_view4		:Post Office(L)2x2
+
+STR_PUBB_12      :City Hall
 
 
 STR_SHRI_1     :Shrine 1
