@@ -54133,7 +54133,7 @@ item (FEAT_OBJECTS, item_water_objects_2, 1201) {
         remove_cost_multiplier: 0;
         introduction_date:      date(1111,1,1);
         end_of_life_date:       0xFFFFFFFF;
-        object_flags:           bitmask(OBJ_FLAG_ANYTHING_REMOVE);
+        object_flags:           bitmask(OBJ_FLAG_ANYTHING_REMOVE, OBJ_FLAG_DRAW_WATER, OBJ_FLAG_ON_WATER);
 //	animation_info:			[ANIMATION_LOOPING, 9];
 //	animation_speed:		7;
 //	animation_triggers:		3;
@@ -54146,6 +54146,438 @@ item (FEAT_OBJECTS, item_water_objects_2, 1201) {
         autoslope:          return(CB_RESULT_AUTOSLOPE);
 //      additional_text:    string(STR_tallmultipic_1_PURCHASE);
         additional_text:    switch_add_text_STR_water_objects_2;
+	anim_control:    	return CB_RESULT_NEXT_FRAME;
+	anim_next_frame: 	return CB_RESULT_NEXT_FRAME;
+    }
+}
+////water object cannal///
+spriteset (spriteset_water_objects_3_1) {
+    	template_tallmultipic(0,0,"gfx/normaltall_8.png")
+	template_tallmultipic(70,0,"gfx/normaltall_8.png")
+	template_tallmultipic(140,0,"gfx/normaltall_8.png")
+	template_tallmultipic(210,0,"gfx/normaltall_8.png")
+	template_tallmultipic(280,0,"gfx/normaltall_8.png")
+	template_tallmultipic(350,0,"gfx/normaltall_8.png")
+	template_tallmultipic(420,0,"gfx/normaltall_8.png")
+	template_tallmultipic(490,0,"gfx/normaltall_8.png")
+	template_tallmultipic(560,0,"gfx/normaltall_8.png")
+}
+
+alternative_sprites (spriteset_water_objects_3_1, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+
+    	template_tallmultipic(0,0,"gfx/water_objects_3.png")
+	template_tallmultipic(70,0,"gfx/water_objects_3.png")
+	template_tallmultipic(140,0,"gfx/water_objects_3.png")
+	template_tallmultipic(210,0,"gfx/water_objects_3.png")
+	template_tallmultipic(280,0,"gfx/water_objects_3.png")
+	template_tallmultipic(350,0,"gfx/water_objects_3.png")
+	template_tallmultipic(420,0,"gfx/water_objects_3.png")
+	template_tallmultipic(490,0,"gfx/water_objects_3.png")
+	template_tallmultipic(560,0,"gfx/water_objects_3.png")
+}
+
+spriteset (spriteset_water_objects_3_1_snow) {
+    	template_tallmultipic(0,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(70,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(140,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(210,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(280,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(350,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(420,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(490,0,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(560,0,"gfx/normaltall_8_SNOW.png")
+}
+
+alternative_sprites (spriteset_water_objects_3_1_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,0,"gfx/water_objects_3_snow.png")
+	template_tallmultipic(70,0,"gfx/water_objects_3_snow.png")
+	template_tallmultipic(140,0,"gfx/water_objects_3_snow.png")
+	template_tallmultipic(210,0,"gfx/water_objects_3_snow.png")
+	template_tallmultipic(280,0,"gfx/water_objects_3_snow.png")
+	template_tallmultipic(350,0,"gfx/water_objects_3_snow.png")
+	template_tallmultipic(420,0,"gfx/water_objects_3_snow.png")
+	template_tallmultipic(490,0,"gfx/water_objects_3_snow.png")
+	template_tallmultipic(560,0,"gfx/water_objects_3_snow.png")
+}
+
+//2ND ROW NE + SNOW//
+spriteset (spriteset_water_objects_3_2) {
+    	template_tallmultipic(0,120,"gfx/normaltall_8.png")
+	template_tallmultipic(70,120,"gfx/normaltall_8.png")
+	template_tallmultipic(140,120,"gfx/normaltall_8.png")
+	template_tallmultipic(210,120,"gfx/normaltall_8.png")
+	template_tallmultipic(280,120,"gfx/normaltall_8.png")
+	template_tallmultipic(350,120,"gfx/normaltall_8.png")
+	template_tallmultipic(420,120,"gfx/normaltall_8.png")
+	template_tallmultipic(490,120,"gfx/normaltall_8.png")
+	template_tallmultipic(560,120,"gfx/normaltall_8.png")
+}
+
+alternative_sprites (spriteset_water_objects_3_2, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,120,"gfx/water_objects_3.png")
+	template_tallmultipic(70,120,"gfx/water_objects_3.png")
+	template_tallmultipic(140,120,"gfx/water_objects_3.png")
+	template_tallmultipic(210,120,"gfx/water_objects_3.png")
+	template_tallmultipic(280,120,"gfx/water_objects_3.png")
+	template_tallmultipic(350,120,"gfx/water_objects_3.png")
+	template_tallmultipic(420,120,"gfx/water_objects_3.png")
+	template_tallmultipic(490,120,"gfx/water_objects_3.png")
+	template_tallmultipic(560,120,"gfx/water_objects_3.png")
+}
+
+spriteset (spriteset_water_objects_3_2_snow) {
+    	template_tallmultipic(0,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(70,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(140,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(210,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(280,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(350,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(420,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(490,120,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(560,120,"gfx/normaltall_8_SNOW.png")
+}
+
+alternative_sprites (spriteset_water_objects_3_2_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,120,"gfx/water_objects_3_snow.png")
+	template_tallmultipic(70,120,"gfx/water_objects_3_snow.png")
+	template_tallmultipic(140,120,"gfx/water_objects_3_snow.png")
+	template_tallmultipic(210,120,"gfx/water_objects_3_snow.png")
+	template_tallmultipic(280,120,"gfx/water_objects_3_snow.png")
+	template_tallmultipic(350,120,"gfx/water_objects_3_snow.png")
+	template_tallmultipic(420,120,"gfx/water_objects_3_snow.png")
+	template_tallmultipic(490,120,"gfx/water_objects_3_snow.png")
+	template_tallmultipic(560,120,"gfx/water_objects_3_snow.png")
+}
+
+
+//3RD ROW SE + SNOW//
+spriteset (spriteset_water_objects_3_3) {
+    	template_tallmultipic(0,240,"gfx/normaltall_8.png")
+	template_tallmultipic(70,240,"gfx/normaltall_8.png")
+	template_tallmultipic(140,240,"gfx/normaltall_8.png")
+	template_tallmultipic(210,240,"gfx/normaltall_8.png")
+	template_tallmultipic(280,240,"gfx/normaltall_8.png")
+	template_tallmultipic(350,240,"gfx/normaltall_8.png")
+	template_tallmultipic(420,240,"gfx/normaltall_8.png")
+	template_tallmultipic(490,240,"gfx/normaltall_8.png")
+	template_tallmultipic(560,240,"gfx/normaltall_8.png")
+}
+
+alternative_sprites (spriteset_water_objects_3_3, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,240,"gfx/water_objects_3.png")
+	template_tallmultipic(70,240,"gfx/water_objects_3.png")
+	template_tallmultipic(140,240,"gfx/water_objects_3.png")
+	template_tallmultipic(210,240,"gfx/water_objects_3.png")
+	template_tallmultipic(280,240,"gfx/water_objects_3.png")
+	template_tallmultipic(350,240,"gfx/water_objects_3.png")
+	template_tallmultipic(420,240,"gfx/water_objects_3.png")
+	template_tallmultipic(490,240,"gfx/water_objects_3.png")
+	template_tallmultipic(560,240,"gfx/water_objects_3.png")
+}
+
+
+spriteset (spriteset_water_objects_3_3_snow) {
+    	template_tallmultipic(0,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(70,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(140,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(210,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(280,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(350,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(420,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(490,240,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(560,240,"gfx/normaltall_8_SNOW.png")
+}
+
+
+alternative_sprites (spriteset_water_objects_3_3_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,240,"gfx/water_objects_3_snow.png")
+	template_tallmultipic(70,240,"gfx/water_objects_3_snow.png")
+	template_tallmultipic(140,240,"gfx/water_objects_3_snow.png")
+	template_tallmultipic(210,240,"gfx/water_objects_3_snow.png")
+	template_tallmultipic(280,240,"gfx/water_objects_3_snow.png")
+	template_tallmultipic(350,240,"gfx/water_objects_3_snow.png")
+	template_tallmultipic(420,240,"gfx/water_objects_3_snow.png")
+	template_tallmultipic(490,240,"gfx/water_objects_3_snow.png")
+	template_tallmultipic(560,240,"gfx/water_objects_3_snow.png")
+}
+
+
+//4TH ROW + SNOW//
+spriteset (spriteset_water_objects_3_4) {
+    	template_tallmultipic(0,240,"gfx/normaltall_8.png")
+	template_tallmultipic(70,240,"gfx/normaltall_8.png")
+	template_tallmultipic(140,240,"gfx/normaltall_8.png")
+	template_tallmultipic(210,240,"gfx/normaltall_8.png")	
+	template_tallmultipic(280,240,"gfx/normaltall_8.png")
+	template_tallmultipic(350,240,"gfx/normaltall_8.png")
+	template_tallmultipic(420,240,"gfx/normaltall_8.png")
+	template_tallmultipic(490,240,"gfx/normaltall_8.png")
+	template_tallmultipic(560,240,"gfx/normaltall_8.png")
+}
+
+alternative_sprites (spriteset_water_objects_3_4, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,360,"gfx/water_objects_3.png")
+	template_tallmultipic(70,360,"gfx/water_objects_3.png")
+	template_tallmultipic(140,360,"gfx/water_objects_3.png")
+	template_tallmultipic(210,360,"gfx/water_objects_3.png")	
+	template_tallmultipic(280,360,"gfx/water_objects_3.png")
+	template_tallmultipic(350,360,"gfx/water_objects_3.png")
+	template_tallmultipic(420,360,"gfx/water_objects_3.png")
+	template_tallmultipic(490,360,"gfx/water_objects_3.png")
+	template_tallmultipic(560,360,"gfx/water_objects_3.png")
+}
+
+spriteset (spriteset_water_objects_3_4_snow) {
+    	template_tallmultipic(0,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(70,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(140,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(210,360,"gfx/normaltall_8_SNOW.png")	
+	template_tallmultipic(280,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(350,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(420,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(490,360,"gfx/normaltall_8_SNOW.png")
+	template_tallmultipic(560,360,"gfx/normaltall_8_SNOW.png")
+}
+
+alternative_sprites (spriteset_water_objects_3_4_snow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    	template_tallmultipic(0,360,"gfx/water_objects_3_snow.png")
+	template_tallmultipic(70,360,"gfx/water_objects_3_snow.png")
+	template_tallmultipic(140,360,"gfx/water_objects_3_snow.png")
+	template_tallmultipic(210,360,"gfx/water_objects_3_snow.png")	
+	template_tallmultipic(280,360,"gfx/water_objects_3_snow.png")
+	template_tallmultipic(350,360,"gfx/water_objects_3_snow.png")
+	template_tallmultipic(420,360,"gfx/water_objects_3_snow.png")
+	template_tallmultipic(490,360,"gfx/water_objects_3_snow.png")
+	template_tallmultipic(560,360,"gfx/water_objects_3_snow.png")
+}
+
+spriteset (spriteset_water_objects_3_PURCHASE) {
+    template_tallmultipic_purchase(0,0,"gfx/normaltall_8_PURCHASE.png")
+}
+
+alternative_sprites (spriteset_water_objects_3_PURCHASE, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "") {
+    template_tallmultipic_purchase(0,0,"gfx/water_objects_3_PURCHASE.png")
+}
+
+
+//OBJECT 1 SIMPLE tallmultipic//
+//SPRITELAYOUTS//
+
+//RURAL tallmultipic LOT NE + PURCHASE//
+spritelayout spritelayout_water_objects_3_1 {
+    ground {
+        sprite: LOAD_TEMP(1);
+	}
+
+	building {
+        sprite: spriteset_water_objects_3_1((animation_frame + nearby_tile_random_bits(0,0)) % 4);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type == TILETYPE_SNOW);
+    }
+	building {
+        sprite: spriteset_water_objects_3_1_snow((animation_frame + nearby_tile_random_bits(0,0)) % 4);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type != TILETYPE_SNOW);
+    }
+
+
+}
+
+spritelayout spritelayout_water_objects_3_1_purchase {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+	}
+
+	building {
+        sprite: spriteset_water_objects_3_PURCHASE(0);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+    }
+
+}
+
+//RURAL tallmultipic LOT SE + PURCHASE//
+spritelayout spritelayout_water_objects_3_2 {
+    ground {
+        sprite: LOAD_TEMP(1);
+	}
+
+	building {
+        sprite: spriteset_water_objects_3_2((animation_frame + nearby_tile_random_bits(0,0)) % 4);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type == TILETYPE_SNOW);
+    }
+	building {
+        sprite: spriteset_water_objects_3_2_snow((animation_frame + nearby_tile_random_bits(0,0)) % 4);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type != TILETYPE_SNOW);
+    }
+
+}
+spritelayout spritelayout_water_objects_3_2_purchase {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+	}
+
+	building {
+        sprite: spriteset_water_objects_3_PURCHASE(1);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+    }
+
+}
+
+//OBJECT 2 SIMPLE tallmultipic//
+//tallmultipic LOT NE + PURCHASE//
+spritelayout spritelayout_water_objects_3_3 {
+    ground {
+        sprite: LOAD_TEMP(1);
+	}
+
+	building {
+        sprite: spriteset_water_objects_3_3((animation_frame + nearby_tile_random_bits(0,0)) % 8);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type == TILETYPE_SNOW);
+    }
+	building {
+        sprite: spriteset_water_objects_3_3_snow((animation_frame + nearby_tile_random_bits(0,0)) % 8);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type != TILETYPE_SNOW);
+    }
+
+}
+spritelayout spritelayout_water_objects_3_3_purchase {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+	}
+
+	building {
+        sprite: spriteset_water_objects_3_PURCHASE(2);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+    }
+
+}
+
+//tallmultipic LOT SE + PURCHASE//
+spritelayout spritelayout_water_objects_3_4 {
+    ground {
+        sprite: LOAD_TEMP(1);
+	}
+
+	building {
+        sprite: spriteset_water_objects_3_4((animation_frame + nearby_tile_random_bits(0,0)) % 4);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type == TILETYPE_SNOW);
+    }
+	building {
+        sprite: spriteset_water_objects_3_4_snow((animation_frame + nearby_tile_random_bits(0,0)) % 4);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+		hide_sprite: (terrain_type != TILETYPE_SNOW);
+    }
+
+}
+spritelayout spritelayout_water_objects_3_4_purchase {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+	}
+
+	building {
+        sprite: spriteset_water_objects_3_PURCHASE(3);
+		xextent: 16;
+		yextent: 16;
+		zextent: 6;
+    }
+
+}
+
+//decide spritelayout for each of the 4 views
+switch (FEAT_OBJECTS, SELF, switch_water_objects_3_view, view) {
+    1:  spritelayout_water_objects_3_2;
+    2:  spritelayout_water_objects_3_3;
+    3:  spritelayout_water_objects_3_4;
+    spritelayout_water_objects_3_1;
+}
+
+//calculate ground sprite for object
+switch (FEAT_OBJECTS, SELF, switch_water_objects_3_object, [
+        //tile slope offset in storage register 0
+        STORE_TEMP(0, 0),
+        //terrain type in storage register 1
+        STORE_TEMP(GROUNDSPRITE_NORMAL, 1),
+		STORE_TEMP( (nearby_tile_terrain_type(0,0) == TILETYPE_DESERT) * GROUNDSPRITE_DESERT, 1),
+		STORE_TEMP( LOAD_TEMP(1) + (LOAD_TEMP(1) == 0) * 4512 * (nearby_tile_terrain_type( 1, 0) == TILETYPE_DESERT), 1),
+		STORE_TEMP( LOAD_TEMP(1) + (LOAD_TEMP(1) == 0) * 4512 * (nearby_tile_terrain_type(-1, 0) == TILETYPE_DESERT), 1),
+		STORE_TEMP( LOAD_TEMP(1) + (LOAD_TEMP(1) == 0) * 4512 * (nearby_tile_terrain_type( 0, 1) == TILETYPE_DESERT), 1),
+		STORE_TEMP( LOAD_TEMP(1) + (LOAD_TEMP(1) == 0) * 4512 * (nearby_tile_terrain_type( 0,-1) == TILETYPE_DESERT), 1),
+		STORE_TEMP( LOAD_TEMP(1) + (LOAD_TEMP(1) == 0) * GROUNDSPRITE_NORMAL, 1),
+		STORE_TEMP(terrain_type == TILETYPE_SNOW   ? GROUNDSPRITE_SNOW : LOAD_TEMP(1), 1),
+		STORE_TEMP(snowline_height == 0xFF ? 0xFF : nearby_tile_height(0,0) - snowline_height, 127),
+		STORE_TEMP((LOAD_TEMP(127) == -1) ? GROUNDSPRITE_SNOW_1_4 : LOAD_TEMP(1), 1),
+		STORE_TEMP((LOAD_TEMP(127) ==  0) ? GROUNDSPRITE_SNOW_2_4 : LOAD_TEMP(1), 1),
+		STORE_TEMP((LOAD_TEMP(127) ==  1) ? GROUNDSPRITE_SNOW_3_4 : LOAD_TEMP(1), 1)
+        ]) {
+    switch_water_objects_3_view;
+}
+
+//decide spritelayout for the purchase menu
+switch (FEAT_OBJECTS, SELF, switch_water_objects_3_purchase, view) {
+    1:  spritelayout_water_objects_3_2_purchase;
+    2:  spritelayout_water_objects_3_3_purchase;
+    3:  spritelayout_water_objects_3_4_purchase;
+    spritelayout_water_objects_3_1_purchase;
+}
+
+switch (FEAT_OBJECTS, SELF, switch_add_text_STR_water_objects_3, view) {
+1: string(STR_water_objects_3_purchase_view2);
+2: string(STR_water_objects_3_purchase_view3);
+3: string(STR_water_objects_3_purchase_view4);
+default: string(STR_water_objects_3_purchase_view1);
+}
+
+item (FEAT_OBJECTS, item_water_objects_3, 1202) {
+    property {
+        class:                  "WAOB";
+	classname:		string(STR_WAOB);
+        name:                   string(STR_water_objects_3);
+        climates_available:     ALL_CLIMATES;
+        size:                   [1,1];
+        build_cost_multiplier:  0;
+        remove_cost_multiplier: 0;
+        introduction_date:      date(1111,1,1);
+        end_of_life_date:       0xFFFFFFFF;
+        object_flags:           bitmask(OBJ_FLAG_ANYTHING_REMOVE, OBJ_FLAG_DRAW_WATER, OBJ_FLAG_ON_WATER);
+//	animation_info:			[ANIMATION_LOOPING, 9];
+//	animation_speed:		7;
+//	animation_triggers:		3;
+        height:                 1;
+        num_views:              4;
+    }
+    graphics {
+        default:            switch_water_objects_3_object;
+        purchase:           switch_water_objects_3_purchase;
+        autoslope:          return(CB_RESULT_AUTOSLOPE);
+//      additional_text:    string(STR_tallmultipic_1_PURCHASE);
+        additional_text:    switch_add_text_STR_water_objects_3;
 	anim_control:    	return CB_RESULT_NEXT_FRAME;
 	anim_next_frame: 	return CB_RESULT_NEXT_FRAME;
     }
