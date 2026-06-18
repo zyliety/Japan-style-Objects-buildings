@@ -1,6 +1,6 @@
 # Japan-style-Objects-buildings
 Introduce various buildings, inspired by the lovely scenery of Japan.  
-Draw by: Zyliety, GarryG, Mrsunman, Lorenzolu.   
+Draw by: Zyliety, GarryG, Mrsunman, Lorenzolu, RykSeb.   
 Code by:Zyliety.  
 
 Preview:  

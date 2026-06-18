@@ -1,8 +1,8 @@
 ##grflangid 0x01
 
 #Main grf title and description
-STR_GRF_NAME        :JP Style Objects Buildings V3.94
-STR_GRF_DESCRIPTION :{YELLOW}JP Style Objects ,2026/4/16. {}{YELLOW}Introduce various buildings, inspired by the lovely scenery of Japan.{}{WHITE}Draw by: Zyliety, GarryG, Mrsunman, Lorenzolu. {}Code by:Zyliety.{}License:GPLv2 or higher
+STR_GRF_NAME        :JP Style Objects Buildings V4
+STR_GRF_DESCRIPTION :{YELLOW}JP Style Objects ,2026/6/18. {}{YELLOW}Introduce various buildings, inspired by the lovely scenery of Japan.{}{WHITE}Draw by: Zyliety, GarryG, Mrsunman, Lorenzolu, RykSeb {}Code by:Zyliety.{}License:GPLv2 or higher
 STR_GRF_URL         :https://github.com/zyliety/Japan-style-Objects-buildings
 
 #error messages
@@ -125,6 +125,9 @@ STR_farm_6_purchase_view1		:farm 2x2 tiles
 STR_farm_6_purchase_view2		:farm 2x2 tiles
 STR_farm_6_purchase_view3		:farm 2x2 tiles
 STR_farm_6_purchase_view4		:farm 2x2 tiles
+
+STR_farm_7        :farm 7
+STR_farm_8        :apple trees
 
 STR_MESH_1		:Lawson/Saizeriya
 STR_MESH_2		:Low Apartment
